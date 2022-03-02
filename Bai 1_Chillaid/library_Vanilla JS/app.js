@@ -5,6 +5,7 @@ $(function() {
         lineWidth:9,
         scaleLength:15,
         animate:2500
+
     });
 });
 

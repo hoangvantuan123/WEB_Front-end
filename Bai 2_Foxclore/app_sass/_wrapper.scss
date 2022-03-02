@@ -1,0 +1,162 @@
+.wrapper {
+    width: 100%;
+    height: 700px;
+    background-image: url(/app_images/2b314e6ad8d714894dc6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    .container-header {
+        max-width: 1250px;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 40px 20px ;
+        header {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+
+            color: #fff;
+            justify-content: space-between;
+            align-items: center;
+
+            .info-item {
+                display: flex;
+                gap: 0 60px;
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        nav {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            height: 60px;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0f0f0f86;
+            .menu {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                padding: 10px;
+                z-index: 1;
+                gap:  0 40px;
+                .menu-item a  {
+                    font-weight: 200;
+                    font-size: 15px;
+                    line-height: 10px;
+                    text-decoration: none;
+                    color: #fff
+
+                }
+                .menu-item:not(:first-child) {
+                    margin-left: 25px;
+                }
+                .menu-link {
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+
+                .menu-item.has-child {
+                    position: relative;
+                }
+
+                .menu-item.has-child:hover .menu-child {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .menu-child {
+                    --top-space: 20px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    transition: all 0.2s ease;
+                    list-style: none;
+                    transform: translateY(var(--top-space));
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.2s ease;
+                }
+
+                .menu-child:before {
+                    content: "";
+                    height: var(--top-space);
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: transparent;
+                    opacity: 0;
+                    transform: translateY(-100%);
+                }
+
+                .menu-child {
+                    border: 0px solid rgb(255, 255, 255);
+                    min-width: 200px;
+                    background-color: #2B2F37;
+                }
+
+                .menu-child-link {
+                    display: block;
+                    padding: 15px;
+                    text-decoration: none;
+                    border-bottom: 1px solid #eee;
+                    color: rgb(255, 255, 255);
+                }
+
+                .menu li label {
+                    display: none;
+                }
+
+                .menu li a:hover,
+                .menu li label:hover {
+                    color: coral;
+
+                    transition: all .3s;
+                }
+
+                .wrapper .menu-icon {
+                    display: none;
+                }
+
+                .wrapper input[type="checkbox"] {
+                    display: none;
+                }
+
+
+                /* silde-show */
+                .silde-show {
+                    position: relative;
+                    height: 750px;
+                    top: 90px;
+                    background-image: url(./image/2b314e6ad8d714894dc6.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                }
+
+                .container .title {
+                    text-align: center;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+}
