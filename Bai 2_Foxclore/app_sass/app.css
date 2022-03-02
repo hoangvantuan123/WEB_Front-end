@@ -278,8 +278,8 @@ h6 {
   margin-bottom: 30px;
   letter-spacing: 0px;
 }
-.wrapper .container .container-title .title-text .btn button,
-.wrapper .container-header .container-title .title-text .btn button {
+
+.btn button {
   width: 170px;
   height: 50px;
   padding: 10px;
@@ -287,16 +287,14 @@ h6 {
   margin-top: 20px;
   cursor: pointer;
 }
-.wrapper .container .container-title .title-text .btn button span,
-.wrapper .container-header .container-title .title-text .btn button span {
+.btn button span {
   font-size: 14px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: white;
 }
-.wrapper .container .container-title .title-text .btn button:hover,
-.wrapper .container-header .container-title .title-text .btn button:hover {
+.btn button:hover {
   border: 1px solid #a0a0a0;
   background-color: rgba(238, 238, 238, 0);
   transition: all 1s ease;
