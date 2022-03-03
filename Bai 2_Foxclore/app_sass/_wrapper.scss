@@ -6,13 +6,18 @@
     background-position: center;
     background-size: cover;
 
+    .container {
+        background-color: rgba(0, 0, 0, .55);
+        height:850px;
+    }
 
-    .container,
+
     .container-header {
         max-width: 1250px;
         margin: 0 auto;
         justify-content: center;
         padding: 20px;
+
 
         header {
             position: relative;
@@ -207,22 +212,24 @@
 
 
                 h4 {
-                    font-size:20px;
+                    font-size: 20px;
                     font-family: $font1;
-                    font-weight:400;
+                    font-weight: 400;
                 }
-                h2{
-                    font-size:3.3em;
+
+                h2 {
+                    font-size: 3.3em;
                     font-family: $font;
                     font-weight: 500;
                     margin-bottom: 20px;
                 }
-                h3{
-                    max-width:650px;
-                    font-size:15px;
+
+                h3 {
+                    max-width: 650px;
+                    font-size: 15px;
                     font-family: $font1;
                     font-weight: 400;
-                    line-height:20px;
+                    line-height: 20px;
                     margin-bottom: 30px;
                     letter-spacing: 0px;
                 }
