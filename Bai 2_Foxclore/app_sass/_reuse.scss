@@ -21,3 +21,21 @@
         }
     }
 }
+
+
+.container-reuse {
+    &-title {
+        max-width: 500px;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        h6{
+            font-size: 13px;
+            font-family: $font1;
+        }
+        h3{
+            font-size: 23px;
+        }
+    }
+}
