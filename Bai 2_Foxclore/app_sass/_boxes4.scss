@@ -84,7 +84,7 @@
         }
 
         &-text {
-            height: 110px;
+            height: auto;
             padding: 20px;
             background-color: white;
             color: black;
@@ -192,4 +192,15 @@
         }
 
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .row{
+        width:100%;
+    }
+    .form-group, .from-blog{
+        padding: 20px;
+    }
+
 }

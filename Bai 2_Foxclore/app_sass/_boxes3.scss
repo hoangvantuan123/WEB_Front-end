@@ -25,6 +25,7 @@
             justify-content: center;
             margin: 0 auto;
             text-align: center;
+
             .item_icon i{
                 color:$color;
                 margin-bottom: 30px;
@@ -60,3 +61,14 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .container-list{
+        padding: 20px;
+    }
+    .container-list_item{
+        max-width:250px;
+
+    }
+}
+

@@ -25,7 +25,8 @@
         display: flex;
         justify-content: center;
         gap: 0 20px;
-        margin-top:30px;
+        margin-top: 30px;
+
         .icon-wrap {
             width: 35px;
             height: 35px;
@@ -34,9 +35,10 @@
             line-height: 35px
         }
     }
-    .text{
-        p{
-            margin-top:25px;
+
+    .text {
+        p {
+            margin-top: 25px;
             font-family: $font1;
             opacity: 0.9;
         }
@@ -87,10 +89,11 @@
         opacity: 0.8;
         margin: 20px 0;
     }
+
     .col_2 .text p,
     .footer-list h5 {
         font-size: 15px;
-        color:$color;
+        color: $color;
         font-weight: 100;
         margin: 15px 0;
         opacity: 1;
@@ -101,22 +104,25 @@
         opacity: 0.1;
         margin-top: 5px;
     }
+
     .col_2 {
 
 
         span {
-        color: rgb(214, 214, 214);
-        font-size: 13px;
-        opacity: 0.5;
-    }
+            color: rgb(214, 214, 214);
+            font-size: 13px;
+            opacity: 0.5;
+        }
     }
 }
+
 .footer-md {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    margin-top: 40px;
 }
 
 .md_1 {
@@ -155,5 +161,18 @@
     grid-area: 3 / 3 / 4 / 4;
 }
 
-
-
+@media screen and (max-width: 1024px) {
+    .footer-col {
+        grid-template-columns: repeat(4, 170px);
+        grid-template-rows: 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 0px;
+        padding: 20px;
+        margin-top: 40px;
+        .info-btn {
+            input{
+                width:170px;
+            }
+        }
+    }
+}
