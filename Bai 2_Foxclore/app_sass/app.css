@@ -135,11 +135,13 @@ nav .menu {
   gap: 0 30px;
 }
 nav .menu .menu-item a {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 15px;
   line-height: 10px;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   color: #fff;
+  flex: 1;
 }
 nav .menu .menu-item:not(:first-child) {
   margin-left: 25px;
@@ -320,7 +322,7 @@ nav .menu-search .search-icon ion-icon {
   .wrapper nav .menu li a,
 .wrapper nav .menu li label {
     width: 100%;
-    line-height: 40px;
+    line-height: 30px;
     font-size: 18px;
     font-weight: 800;
     display: block;
