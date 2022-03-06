@@ -568,7 +568,7 @@ h6 {
 }
 
 .father-blog-container .box-item .hero-box .image img {
-    width: 350px;
+    width: 100%;
     max-height: 400px;
 }
 
@@ -1190,8 +1190,12 @@ h6 {
     }
 
     .father-blog-container .box-item .hero-box {
-        margin-bottom: 50px;
+       width: 100%;
+       margin-top: 40px;
+
+
     }
+
 
     .parent .md-box {
         position: relative;
