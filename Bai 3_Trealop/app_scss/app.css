@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Font */
+/* color */
+.wrapper .container {
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.wrapper header {
+  background-color: #F4F4F4;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper header .header-content {
+  max-width: 1250px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.wrapper header .header-content .header-left,
+.wrapper header .header-content .info-sdt,
+.wrapper header .header-content .info-email,
+.wrapper header .header-content .header-right ul,
+.wrapper header .header-content li, .wrapper header .header-content a {
+  display: flex;
+  gap: 0 30px;
+  text-decoration: none;
+  color: #53D3DE;
+}
+.wrapper header .header-content .info-sdt, .wrapper header .header-content .info-email {
+  gap: 0 10px;
+  color: black;
+}
+.wrapper header .header-content .info-sdt h6, .wrapper header .header-content .info-email h6 {
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+nav {
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  background-color: #53D3DE;
+}
+nav .container-menu {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  height: 90px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 a {
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  z-index: 1;
+}
+
+.menu-item a span {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 10px;
+  color: white;
+  flex: 1;
+}
+
+.menu-item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item.has-child {
+  position: relative;
+}
+
+.menu-item.has-child:hover .menu-child {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-child {
+  --top-space: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  list-style: none;
+  transform: translateY(var(--top-space));
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  padding: 0 20px;
+}
+
+.menu-child:before {
+  content: "";
+  height: var(--top-space);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.menu-child {
+  border: 0px solid white;
+  min-width: 200px;
+  background-color: #1D8B94;
+}
+
+.menu-child-link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  color: white;
+}
+
+.menu li label {
+  display: none;
+}
+
+.menu li a:hover,
+.menu li label:hover {
+  color: coral;
+  transition: all 0.3s;
+}
+
+.wrapper .menu-icon {
+  display: none;
+}
+
+.wrapper input[type=checkbox] {
+  display: none;
+}
+
+/*# sourceMappingURL=app.css.map */
