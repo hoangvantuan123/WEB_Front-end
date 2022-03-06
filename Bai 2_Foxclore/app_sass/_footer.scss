@@ -1,15 +1,14 @@
 .footer {
     position: relative;
-    background-image: url(/app_images/2b314e6ad8d714894dc6.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
+    background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
 
     .footer-filter {
         background-color: rgba(0, 0, 0, .55);
         color: white;
-        height: 800px;
+        height: 100%;
 
     }
 }
@@ -171,20 +170,25 @@
         grid-row-gap: 0px;
         padding: 20px;
         margin-top: 40px;
+
         .info-btn {
-            input{
-                width:170px;
+            input {
+                width: 170px;
             }
         }
     }
 }
+
 @media screen and (max-width: 600px) {
-    .footer, .footer-filter {
-        width:100%;
-       min-height:1800px;
-        .footer-col{
+
+
+    .footer-filter {
+
+        .footer-col {
             display: inline-block;
-            .box{
+            height: auto;
+
+            .box {
                 margin-bottom: 40px;
             }
         }
