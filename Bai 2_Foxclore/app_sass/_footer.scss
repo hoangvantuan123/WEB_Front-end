@@ -4,10 +4,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 800px;
 
     .footer-filter {
         background-color: rgba(0, 0, 0, .55);
         color: white;
+        height: 800px;
 
     }
 }
@@ -175,4 +177,17 @@
             }
         }
     }
+}
+@media screen and (max-width: 600px) {
+    .footer, .footer-filter {
+        width:100%;
+       min-height:1800px;
+        .footer-col{
+            display: inline-block;
+            .box{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
 }

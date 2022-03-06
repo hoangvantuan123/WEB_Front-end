@@ -71,4 +71,23 @@
 
     }
 }
+@media screen and (max-width: 600px) {
+    .boxes3{
+        height: auto;
+        .container-reuse .container-list{
+            width: 100%;
+            display: inline-block;
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+            &_item{
+                max-width: 100%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}
+
 
