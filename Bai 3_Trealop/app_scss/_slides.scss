@@ -1,0 +1,37 @@
+.slides {
+    position: relative;
+    height: 500px;
+    background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+
+    .fa-filter {
+        background-color: rgba(0, 0, 0, .55);
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+
+        .box {
+            max-width:1250px;
+            margin: 0 auto;
+            padding: 0 20px;
+            justify-content: center;
+            align-items: center;
+            color:rgb(223, 222, 222);
+            margin-top:150px;
+            .slide-text{
+                line-height: 40px;
+                h4{
+                    font-size:20px;
+                    font-family: $font1;
+                    font-weight: 200;
+                }
+
+
+
+            }
+        }
+    }
+
+}

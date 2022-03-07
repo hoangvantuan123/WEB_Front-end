@@ -1,0 +1,193 @@
+.hero-card {
+    position: relative;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F4F4F4;
+
+    .container-card {
+        max-width: 1250px;
+        padding: 20px;
+        margin: 0 auto;
+
+        .text-top {
+            margin-top: 50px;
+
+            h4 {
+                font-size: 20px;
+                font-family: $font1;
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 15px;
+                font-family: $font;
+                font-weight: 300;
+            }
+        }
+
+        .box-card {
+            display: flex;
+            margin-top: 50px;
+
+            .card {
+                margin: 0 auto;
+                width: 350px;
+                height: 400px;
+                background-color: white;
+                padding: 20px;
+
+                &-col {
+
+                    &__icon {
+                        font-size: 5rem;
+                    }
+
+                    &__text {
+                        h5 {
+                            font-size: 20px;
+                            font-family: $font1;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            margin-top: 30px;
+                            font-size: 15px;
+                        }
+
+
+
+                    }
+
+                    &__money {
+                        h6 {
+                            font-size: 50px;
+                            color: $color1;
+
+                            sup {
+                                font-size: 20px;
+                                color: black;
+                                font-weight: 300;
+                            }
+
+                            span {
+                                font-size: 15px;
+                                font-family: $font1;
+                                font-weight: 400;
+                                opacity: 0.8;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.crossbar {
+    width: 100%;
+    position: relative;
+    height: 90px;
+    background-color: $color1;
+    margin-top: 40px;
+
+    .container {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+}
+
+
+.card__md2 {
+    .box-card {
+        .card {
+            position: relative;
+            border: 1px solid rgb(148, 148, 148);
+
+        }
+    }
+}
+
+.blog {
+    width: 100%;
+    height: 400px;
+    background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container{
+        background-color: rgba(0,0,0,.55);
+        height:400px;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        .row{
+
+        }
+        .row-image{
+            padding-top: 50px;
+            img{
+                width:100px;
+                height:100px;
+                border-radius:100px;
+                margin: 0 auto;
+            }
+
+        }
+        .row-text{
+           color: #fff;
+            p{
+                max-width: 700px;
+                margin: 0 auto;
+                padding-top: 30px;
+                font-family: $font;
+                font-weight: 300;
+            }
+            .row-info{
+                margin-top:20px;
+                h5{
+                    font-size: 24px;
+                    font-family: $font1;
+                    font-weight: 300;
+                }
+                span{
+                    font-family: $font;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.info{
+    padding: 30px;
+    .container{
+        max-width: 1250px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0 auto;
+        .info-col{
+           display: flex;
+            margin: 0 auto;
+            gap: 0 20px;
+            align-items: center;
+            &__icons{
+                color:$color;
+            }
+            &__title{
+                text-align: left;
+
+            }
+        }
+
+    }
+}
