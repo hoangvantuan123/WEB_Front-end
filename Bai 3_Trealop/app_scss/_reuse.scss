@@ -1,0 +1,29 @@
+.btn{
+    button{
+
+        width:180px;
+        height:45px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        transition: all 0.7s ease;
+    }
+    .btn-filter__1{
+        background-color:$color;
+        &:hover{
+            background-color:rgba(206, 206, 206, 0);
+            border:1px solid rgb(255, 255, 255);
+        }
+    }
+    .btn-filter__2{
+        background-color:rgba(206, 206, 206, 0);
+        border:1px solid rgb(255, 255, 255);
+        &:hover{
+            background-color:$color;
+            border: 0;
+        }
+    }
+}

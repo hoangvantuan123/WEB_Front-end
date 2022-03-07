@@ -1,6 +1,6 @@
 .hero-card {
     position: relative;
-    height: 700px;
+    height: 634px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -30,18 +30,40 @@
         .box-card {
             display: flex;
             margin-top: 50px;
+            gap: 0 30px;
 
             .card {
                 margin: 0 auto;
                 width: 350px;
                 height: 400px;
                 background-color: white;
-                padding: 20px;
+
+                &:hover {
+                    border: 1px solid $color;
+
+                }
 
                 &-col {
+                    padding: 15px;
 
                     &__icon {
                         font-size: 5rem;
+
+                        i {
+                            color: $color;
+                        }
+                    }
+
+                    .icon-filter__a i {
+                        color: #B12E52;
+                    }
+
+                    .icon-filter__b i {
+                        color: #00B900;
+                    }
+
+                    .icon-filter__c i {
+                        color: #359AFF;
                     }
 
                     &__text {
@@ -81,16 +103,34 @@
                         }
                     }
                 }
+
+                .btn {
+                    margin-top: 20px;
+
+                    button {
+                        width: 100px;
+                    }
+
+                    .btn-filter__1 {
+
+                        &:hover {
+                            color: black;
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid $color;
+                        }
+                    }
+                }
             }
         }
 
     }
 }
 
+/*  crossbar*/
 .crossbar {
     width: 100%;
     position: relative;
-    height: 90px;
+    height: 105px;
     background-color: $color1;
     margin-top: 40px;
 
@@ -102,6 +142,24 @@
         justify-content: space-between;
         align-items: center;
         flex: 1;
+
+        .bar-left {
+            h5 {
+                font-size: 20px;
+                font-family: $font1;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+
+        .bar-right {
+            .btn {
+                button {
+                    width: 230px;
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
 
@@ -109,9 +167,119 @@
 .card__md2 {
     .box-card {
         .card {
+            padding: 20px;
             position: relative;
             border: 1px solid rgb(148, 148, 148);
 
+            &:hover {
+                background-color: #eeeeeea1;
+            }
+
+            .card-col__text {
+                flex: 1;
+
+                p {
+                    font-size: 16px;
+                    min-height: 70px;
+                    flex: 1;
+                    flex-shrink: 0;
+                }
+            }
+
+            .btn {
+                button {
+                    min-width: 130px;
+                }
+            }
+        }
+    }
+}
+
+.card__md3 {
+    max-width: 100%;
+    height: 660px;
+    background-color: #F4F4F4;
+
+    .text-top {
+        padding: 70px 0 70px;
+    }
+
+    .box-card {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0 50px;
+
+        .card {
+            width: 300px;
+
+            &-image {
+                margin-bottom: 30px;
+                position: relative;
+
+                &:hover {
+                    .filter__hover{
+                        display: block;
+
+                    }
+                }
+
+                img {
+                    display: block;
+                    width: 340px;
+                    cursor: pointer;
+
+                }
+
+                .filter__hover {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #ebebeb34;
+                    display: none;
+                    cursor: pointer;
+
+
+                    ion-icon {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        font-size: 45px;
+                        color: $color;
+
+                    }
+                }
+
+
+
+
+            }
+
+
+            &-title {
+                font-size: 20px;
+                font-family: $font;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 50px;
+
+        button {
+            &:hover {
+                background-color: rgba(255, 255, 255, 0);
+                color: black;
+                border: 1px solid black;
+            }
         }
     }
 }
@@ -124,42 +292,48 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    .container{
-        background-color: rgba(0,0,0,.55);
-        height:400px;
-        justify-content:center;
+    .container {
+        background-color: rgba(0, 0, 0, .55);
+        height: 400px;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        .row{
 
-        }
-        .row-image{
+        .row {}
+
+        .row-image {
             padding-top: 50px;
-            img{
-                width:100px;
-                height:100px;
-                border-radius:100px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 100px;
                 margin: 0 auto;
             }
 
         }
-        .row-text{
-           color: #fff;
-            p{
+
+        .row-text {
+            color: #fff;
+
+            p {
                 max-width: 700px;
                 margin: 0 auto;
                 padding-top: 30px;
                 font-family: $font;
                 font-weight: 300;
             }
-            .row-info{
-                margin-top:20px;
-                h5{
+
+            .row-info {
+                margin-top: 20px;
+
+                h5 {
                     font-size: 24px;
                     font-family: $font1;
                     font-weight: 300;
                 }
-                span{
+
+                span {
                     font-family: $font;
                     font-size: 13px;
                 }
@@ -167,23 +341,28 @@
         }
     }
 }
-.info{
+
+.info {
     padding: 30px;
-    .container{
+
+    .container {
         max-width: 1250px;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
-        .info-col{
-           display: flex;
+
+        .info-col {
+            display: flex;
             margin: 0 auto;
             gap: 0 20px;
             align-items: center;
-            &__icons{
-                color:$color;
+
+            &__icons {
+                color: $color;
             }
-            &__title{
+
+            &__title {
                 text-align: left;
 
             }

@@ -211,7 +211,7 @@ nav .container-menu {
 
 .slides {
   position: relative;
-  height: 500px;
+  height: 600px;
   background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
@@ -219,7 +219,7 @@ nav .container-menu {
 }
 .slides .fa-filter {
   background-color: rgba(0, 0, 0, 0.55);
-  height: 500px;
+  height: 600px;
   justify-content: center;
   align-items: center;
 }
@@ -237,13 +237,28 @@ nav .container-menu {
 }
 .slides .fa-filter .box .slide-text h4 {
   font-size: 20px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
+  letter-spacing: 5px;
+}
+.slides .fa-filter .box .slide-text h3 {
+  font-size: 3em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  margin: 30px 0;
+}
+.slides .fa-filter .box .slide-text p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+.slides .fa-filter .box .btn button {
+  margin: 40px 20px 0 0;
 }
 
 .hero-card {
   position: relative;
-  height: 700px;
+  height: 634px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -270,16 +285,34 @@ nav .container-menu {
 .hero-card .container-card .box-card {
   display: flex;
   margin-top: 50px;
+  gap: 0 30px;
 }
 .hero-card .container-card .box-card .card {
   margin: 0 auto;
   width: 350px;
   height: 400px;
   background-color: white;
-  padding: 20px;
+}
+.hero-card .container-card .box-card .card:hover {
+  border: 1px solid #53D3DE;
+}
+.hero-card .container-card .box-card .card-col {
+  padding: 15px;
 }
 .hero-card .container-card .box-card .card-col__icon {
   font-size: 5rem;
+}
+.hero-card .container-card .box-card .card-col__icon i {
+  color: #53D3DE;
+}
+.hero-card .container-card .box-card .card-col .icon-filter__a i {
+  color: #B12E52;
+}
+.hero-card .container-card .box-card .card-col .icon-filter__b i {
+  color: #00B900;
+}
+.hero-card .container-card .box-card .card-col .icon-filter__c i {
+  color: #359AFF;
 }
 .hero-card .container-card .box-card .card-col__text h5 {
   font-size: 20px;
@@ -306,11 +339,23 @@ nav .container-menu {
   opacity: 0.8;
   color: black;
 }
+.hero-card .container-card .box-card .card .btn {
+  margin-top: 20px;
+}
+.hero-card .container-card .box-card .card .btn button {
+  width: 100px;
+}
+.hero-card .container-card .box-card .card .btn .btn-filter__1:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid #53D3DE;
+}
 
+/*  crossbar*/
 .crossbar {
   width: 100%;
   position: relative;
-  height: 90px;
+  height: 105px;
   background-color: #1D8B94;
   margin-top: 40px;
 }
@@ -323,10 +368,101 @@ nav .container-menu {
   align-items: center;
   flex: 1;
 }
+.crossbar .container .bar-left h5 {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #fff;
+}
+.crossbar .container .bar-right .btn button {
+  width: 230px;
+  font-size: 15px;
+}
 
 .card__md2 .box-card .card {
+  padding: 20px;
   position: relative;
   border: 1px solid #949494;
+}
+.card__md2 .box-card .card:hover {
+  background-color: #eeeeeea1;
+}
+.card__md2 .box-card .card .card-col__text {
+  flex: 1;
+}
+.card__md2 .box-card .card .card-col__text p {
+  font-size: 16px;
+  min-height: 70px;
+  flex: 1;
+  flex-shrink: 0;
+}
+.card__md2 .box-card .card .btn button {
+  min-width: 130px;
+}
+
+.card__md3 {
+  max-width: 100%;
+  height: 660px;
+  background-color: #F4F4F4;
+}
+.card__md3 .text-top {
+  padding: 70px 0 70px;
+}
+.card__md3 .box-card {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0 50px;
+}
+.card__md3 .box-card .card {
+  width: 300px;
+}
+.card__md3 .box-card .card-image {
+  margin-bottom: 30px;
+  position: relative;
+}
+.card__md3 .box-card .card-image:hover .filter__hover {
+  display: block;
+}
+.card__md3 .box-card .card-image img {
+  display: block;
+  width: 340px;
+  cursor: pointer;
+}
+.card__md3 .box-card .card-image .filter__hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ebebeb34;
+  display: none;
+  cursor: pointer;
+}
+.card__md3 .box-card .card-image .filter__hover ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 45px;
+  color: #53D3DE;
+}
+.card__md3 .box-card .card-title {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+.card__md3 .btn {
+  margin-top: 50px;
+}
+.card__md3 .btn button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 1px solid black;
 }
 
 .blog {
@@ -430,6 +566,33 @@ nav .container-menu {
 }
 .footer .container .div4 {
   grid-area: 1/4/2/5;
+}
+
+.btn button {
+  width: 180px;
+  height: 45px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.btn .btn-filter__1 {
+  background-color: #53D3DE;
+}
+.btn .btn-filter__1:hover {
+  background-color: rgba(206, 206, 206, 0);
+  border: 1px solid white;
+}
+.btn .btn-filter__2 {
+  background-color: rgba(206, 206, 206, 0);
+  border: 1px solid white;
+}
+.btn .btn-filter__2:hover {
+  background-color: #53D3DE;
+  border: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
