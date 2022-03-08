@@ -237,7 +237,7 @@ nav .container-menu {
     height: auto;
     width: 100%;
     top: 150px;
-    right: 100vh;
+    left: -100%;
     margin-left: 0;
     overflow-y: auto;
     transition: all 1s ease;
@@ -245,7 +245,7 @@ nav .container-menu {
     border-radius: 20px;
   }
   nav .container-menu #show-menu:checked ~ .menu {
-    right: 0;
+    left: 0;
     /*Nằm sát bên trái*/
   }
   nav .container-menu .menu li {

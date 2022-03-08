@@ -218,7 +218,7 @@ nav {
                 height: auto;
                 width: 100%;
                 top: 150px;
-                right: 100vh;
+                left: -100%;
                 margin-left: 0;
                 overflow-y: auto;
                 transition: all 1s ease;
@@ -228,7 +228,7 @@ nav {
             }
 
             #show-menu:checked~.menu {
-                right: 0;
+                left: 0;
                 /*Nằm sát bên trái*/
 
 
