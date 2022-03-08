@@ -221,7 +221,7 @@ nav .container-menu {
   }
   nav .container-menu .menu-icon {
     display: block;
-    color: #f1f1f1;
+    color: #e0e0e0;
     font-size: 25px;
   }
   nav .container-menu #show-menu:checked ~ .menu-icon i::before {
@@ -232,10 +232,10 @@ nav .container-menu {
     display: block;
     background: #fffffff7;
     height: auto;
-    width: 50%;
+    width: 30%;
     top: 150px;
-    right: -100%;
-    margin-right: 0;
+    right: 100vh;
+    margin-left: 0;
     overflow-y: auto;
     transition: all 1s ease;
     z-index: 3;
@@ -259,6 +259,7 @@ nav .container-menu .menu li label {
     padding: 10px;
     cursor: pointer;
     color: #000;
+    text-align: right;
   }
   nav .container-menu .menu li .menu-link {
     display: none;

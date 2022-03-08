@@ -191,11 +191,11 @@ nav {
     nav {
         .container-menu{
             width: auto;
-            flex-direction: row-reverse;
 
+            flex-direction: row-reverse;
             .menu-icon {
                 display: block;
-                color: rgb(241, 241, 241);
+                color: rgb(224, 224, 224);
                 font-size: 25px;
             }
 
@@ -209,10 +209,10 @@ nav {
                 display: block;
                 background: #fffffff7;
                 height: auto;
-                width: 50%;
+                width: 30%;
                 top: 150px;
-                right: -100%;
-                margin-right: 0;
+                right: 100vh;
+                margin-left: 0;
                 overflow-y: auto;
                 transition: all 1s ease;
                 z-index: 3;
@@ -243,6 +243,7 @@ nav {
                 padding: 10px;
                 cursor: pointer;
                 color: #000;
+                text-align: right;
 
 
             }
