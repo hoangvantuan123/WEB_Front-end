@@ -1,128 +1,136 @@
 .hero-card {
     position: relative;
-    height: 634px;
+    min-height: 634px;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #F4F4F4;
 
     .container-card {
-        max-width: 1250px;
-        padding: 20px;
-        margin: 0 auto;
+        max-width: 100%;
+    }
 
-        .text-top {
-            margin-top: 50px;
+    .container-card-background {
+        background-color: #ffff;
+    }
+}
 
-            h4 {
-                font-size: 20px;
-                font-family: $font1;
-                font-weight: 400;
-            }
+.card__md1,
+.card__md2 {
+    max-width: 1250px;
+    height: 700px;
+    margin: 0 auto;
 
-            p {
-                font-size: 15px;
-                font-family: $font;
-                font-weight: 300;
-            }
+    .text-top {
+        padding-top: 60px;
+
+        h4 {
+            font-size: 20px;
+            font-family: $font1;
+            font-weight: 400;
         }
 
-        .box-card {
-            display: flex;
-            margin-top: 50px;
-            gap: 0 30px;
+        p {
+            font-size: 15px;
+            font-family: $font;
+            font-weight: 300;
+        }
+    }
 
-            .card {
-                margin: 0 auto;
-                width: 350px;
-                height: 400px;
-                background-color: white;
+    .box-card {
+        display: flex;
+        margin-top: 50px;
+        gap: 0 30px;
 
-                &:hover {
-                    border: 1px solid $color;
+        .card {
+            margin: 0 auto;
+            width: 350px;
+            height: 400px;
+            background-color: white;
+
+            &:hover {
+                border: 1px solid $color;
+
+            }
+
+            &-col {
+                padding: 15px;
+
+                &__icon {
+                    font-size: 5rem;
+
+                    i {
+                        color: $color;
+                    }
+                }
+
+                .icon-filter__a i {
+                    color: #B12E52;
+                }
+
+                .icon-filter__b i {
+                    color: #00B900;
+                }
+
+                .icon-filter__c i {
+                    color: #359AFF;
+                }
+
+                &__text {
+                    h5 {
+                        font-size: 20px;
+                        font-family: $font1;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        margin-top: 30px;
+                        font-size: 15px;
+                    }
+
+
 
                 }
 
-                &-col {
-                    padding: 15px;
+                &__money {
+                    h6 {
+                        font-size: 50px;
+                        color: $color1;
 
-                    &__icon {
-                        font-size: 5rem;
-
-                        i {
-                            color: $color;
-                        }
-                    }
-
-                    .icon-filter__a i {
-                        color: #B12E52;
-                    }
-
-                    .icon-filter__b i {
-                        color: #00B900;
-                    }
-
-                    .icon-filter__c i {
-                        color: #359AFF;
-                    }
-
-                    &__text {
-                        h5 {
+                        sup {
                             font-size: 20px;
+                            color: black;
+                            font-weight: 300;
+                        }
+
+                        span {
+                            font-size: 15px;
                             font-family: $font1;
                             font-weight: 400;
-                        }
-
-                        p {
-                            margin-top: 30px;
-                            font-size: 15px;
-                        }
-
-
-
-                    }
-
-                    &__money {
-                        h6 {
-                            font-size: 50px;
-                            color: $color1;
-
-                            sup {
-                                font-size: 20px;
-                                color: black;
-                                font-weight: 300;
-                            }
-
-                            span {
-                                font-size: 15px;
-                                font-family: $font1;
-                                font-weight: 400;
-                                opacity: 0.8;
-                                color: black;
-                            }
-                        }
-                    }
-                }
-
-                .btn {
-                    margin-top: 20px;
-
-                    button {
-                        width: 100px;
-                    }
-
-                    .btn-filter__1 {
-
-                        &:hover {
+                            opacity: 0.8;
                             color: black;
-                            background-color: rgb(255, 255, 255);
-                            border: 1px solid $color;
                         }
                     }
                 }
             }
-        }
 
+            .btn {
+                margin-top: 20px;
+
+                button {
+                    width: 100px;
+                }
+
+                .btn-filter__1 {
+
+                    &:hover {
+                        color: black;
+                        background-color: rgb(255, 255, 255);
+                        border: 1px solid $color;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -130,7 +138,7 @@
 .crossbar {
     width: 100%;
     position: relative;
-    height: 105px;
+    min-height: 105px;
     background-color: $color1;
     margin-top: 40px;
 
@@ -165,6 +173,8 @@
 
 
 .card__md2 {
+    padding-bottom: 60px;
+
     .box-card {
         .card {
             padding: 20px;
@@ -197,7 +207,7 @@
 
 .card__md3 {
     max-width: 100%;
-    height: 660px;
+    min-height: 660px;
     background-color: #F4F4F4;
 
     .text-top {
@@ -219,7 +229,7 @@
                 position: relative;
 
                 &:hover {
-                    .filter__hover{
+                    .filter__hover {
                         display: block;
 
                     }
@@ -243,6 +253,7 @@
                     background-color: #ebebeb5e;
                     display: none;
                     cursor: pointer;
+
                     ion-icon {
                         position: absolute;
                         top: 50%;
@@ -284,7 +295,7 @@
 
 .blog {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -292,7 +303,7 @@
 
     .container {
         background-color: rgba(0, 0, 0, .55);
-        height: 400px;
+        min-height: 400px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -342,6 +353,8 @@
 
 .info {
     padding: 30px;
+    min-height: 100px;
+
     .container {
         max-width: 1250px;
         display: flex;
@@ -362,10 +375,12 @@
             &__title {
                 text-align: left;
                 font-family: $font;
-                h5{
+
+                h5 {
                     font-size: 20px;
                 }
-                h6{
+
+                h6 {
                     font-size: 15px;
                     opacity: 0.8;
 
@@ -380,27 +395,33 @@
 
 
 @media screen and (max-width: 1024px) {
-    .card__md2{
-        max-width:100%;
+    .card__md1 , .card__md2{
+        padding: 20px;
     }
-    .card__md3{
-        .box-card{
+
+
+    .card__md3 {
+        .box-card {
             gap: 0 30px;
         }
     }
 }
+
 @media only screen and (max-width: 992px) {
-    .card__md3{
-        .box-card{
+    .card__md3 {
+        .box-card {
             padding: 20px;
             gap: 0 20px;
         }
     }
-    .info{
-        .container{
+
+    .info {
+        .container {
             gap: 0 30px;
+
             .info-col {
                 gap: 0 10px;
+
                 &__icons {
                     color: $color;
                 }
@@ -408,10 +429,12 @@
                 &__title {
                     text-align: left;
                     font-family: $font;
-                    h5{
+
+                    h5 {
                         font-size: 15px;
                     }
-                    h6{
+
+                    h6 {
                         font-size: 13px;
                         opacity: 0.8;
 
@@ -422,4 +445,76 @@
 
         }
     }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hero-card {
+
+        .card__md1,
+        .card__md2,
+        .card__md3 {
+            position: relative;
+            height: 100%;
+            margin-bottom: 40px;
+
+            .box-card {
+                flex-direction: column;
+                gap: 50px 0;
+            }
+        }
+    }
+
+    .crossbar {
+        .container {
+            flex-direction: column;
+
+            .bar-left {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .blog {
+        .container {
+
+            .row {
+                padding: 30px;
+                text-align: left;
+                flex-direction: column;
+
+                &-image {
+                    img {
+
+                        margin: 0;
+                    }
+                }
+
+                &-text {
+                    p {
+                        max-width: 400px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .info {
+        padding: 20px;
+        .container {
+            align-items: flex-start;
+            flex-direction: column;
+            .info-col{
+                margin: 0 ;
+                align-items: center;
+
+                &__icons{
+                    width:40px;
+                }
+
+            }
+        }
+    }
+
 }
