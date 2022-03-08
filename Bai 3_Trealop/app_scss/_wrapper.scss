@@ -58,6 +58,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color:$color;
+    border-bottom: 3px solid rgba(184, 184, 184, 0.767);
     .container-menu{
         display: flex;
         max-width:1250px;
@@ -83,23 +84,24 @@ nav {
 .menu {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
-    padding: 20px;
+    padding: 30px;
     z-index: 1;
 }
 
-.menu-item a span {
+.menu-item .menu-link {
     font-weight: 200;
     font-size: 15px;
     line-height: 10px;
     color: rgb(255, 255, 255);
     flex: 1;
+    padding: 36px 10px;
 
 }
 
-.menu-item:not(:first-child) {
-    margin-left: 25px;
-}
+
+
 
 .menu-link {
     text-decoration: none;
@@ -116,7 +118,7 @@ nav {
 }
 
 .menu-child {
-    --top-space: 20px;
+    --top-space: 34px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -129,6 +131,7 @@ nav {
     visibility: hidden;
     transition: all 0.2s ease;
     padding: 0 20px;
+
 }
 
 .menu-child:before {
@@ -163,9 +166,11 @@ nav {
 
 .menu li a:hover,
 .menu li label:hover {
-    color: coral;
-
     transition: all .3s;
+}
+.menu .filter-menu:hover {
+    background-color:#1D8B94;
+    border-bottom: 3px solid #fff;
 }
 
 .wrapper .menu-icon {

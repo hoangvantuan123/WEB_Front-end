@@ -240,11 +240,9 @@
                     right: 0;
                     height: 100%;
                     width: 100%;
-                    background-color: #ebebeb34;
+                    background-color: #ebebeb5e;
                     display: none;
                     cursor: pointer;
-
-
                     ion-icon {
                         position: absolute;
                         top: 50%;
@@ -344,7 +342,6 @@
 
 .info {
     padding: 30px;
-
     .container {
         max-width: 1250px;
         display: flex;
@@ -364,6 +361,15 @@
 
             &__title {
                 text-align: left;
+                font-family: $font;
+                h5{
+                    font-size: 20px;
+                }
+                h6{
+                    font-size: 15px;
+                    opacity: 0.8;
+
+                }
 
             }
         }
