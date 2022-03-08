@@ -224,15 +224,11 @@ nav {
                 transition: all 1s ease;
                 z-index: 3;
                 border-radius: 20px;
-
             }
 
             #show-menu:checked~.menu {
                 left: 0;
                 /*Nằm sát bên trái*/
-
-
-
             }
 
             .menu li {
