@@ -376,3 +376,50 @@
 
     }
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .card__md2{
+        max-width:100%;
+    }
+    .card__md3{
+        .box-card{
+            gap: 0 30px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .card__md3{
+        .box-card{
+            padding: 20px;
+            gap: 0 20px;
+        }
+    }
+    .info{
+        .container{
+            gap: 0 30px;
+            .info-col {
+                gap: 0 10px;
+                &__icons {
+                    color: $color;
+                }
+
+                &__title {
+                    text-align: left;
+                    font-family: $font;
+                    h5{
+                        font-size: 15px;
+                    }
+                    h6{
+                        font-size: 13px;
+                        opacity: 0.8;
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}

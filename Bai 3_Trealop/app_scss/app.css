@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 *,
 *::before,
@@ -212,6 +213,79 @@ nav .container-menu {
   display: none;
 }
 
+/*  */
+@media screen and (max-width: 992px) {
+  nav .container-menu {
+    width: auto;
+    flex-direction: row-reverse;
+  }
+  nav .container-menu .menu-icon {
+    display: block;
+    color: #f1f1f1;
+    font-size: 25px;
+  }
+  nav .container-menu #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .container-menu .menu {
+    position: absolute;
+    display: block;
+    background: #fffffff7;
+    height: auto;
+    width: 50%;
+    top: 150px;
+    right: -100%;
+    margin-right: 0;
+    overflow-y: auto;
+    transition: all 1s ease;
+    z-index: 3;
+    border-radius: 20px;
+  }
+  nav .container-menu #show-menu:checked ~ .menu {
+    right: 0;
+    /*Nằm sát bên trái*/
+  }
+  nav .container-menu .menu li {
+    margin: 15px 20px;
+  }
+  nav .container-menu .menu li a,
+nav .container-menu .menu li label {
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  nav .container-menu .menu li .menu-link {
+    display: none;
+  }
+  nav .container-menu .menu ul {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+    z-index: 3;
+  }
+  nav .container-menu .menu #show-item1:checked ~ ul,
+nav .container-menu .menu #show-item2:checked ~ ul,
+nav .container-menu .menu #show-item3:checked ~ ul,
+nav .container-menu .menu #show-item4:checked ~ ul,
+nav .container-menu .menu #show-item5:checked ~ ul,
+nav .container-menu .menu #show-item6:checked ~ ul,
+nav .container-menu .menu #show-item7:checked ~ ul {
+    max-height: 100vh;
+  }
+  nav .container-menu .menu-child li a {
+    padding: 20px;
+    color: black;
+  }
+}
 .slides {
   position: relative;
   height: 600px;
@@ -546,6 +620,42 @@ nav .container-menu {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 1024px) {
+  .card__md2 {
+    max-width: 100%;
+  }
+
+  .card__md3 .box-card {
+    gap: 0 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card__md3 .box-card {
+    padding: 20px;
+    gap: 0 20px;
+  }
+
+  .info .container {
+    gap: 0 30px;
+  }
+  .info .container .info-col {
+    gap: 0 10px;
+  }
+  .info .container .info-col__icons {
+    color: #53D3DE;
+  }
+  .info .container .info-col__title {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+  .info .container .info-col__title h5 {
+    font-size: 15px;
+  }
+  .info .container .info-col__title h6 {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+}
 .footer {
   position: relative;
   min-height: 400px;
@@ -638,6 +748,19 @@ nav .container-menu {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .footer .container .parent {
+    grid-template-columns: repeat(4, 240px);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer .container .parent {
+    grid-template-columns: repeat(4, 175px);
+  }
+  .footer .container .parent .box {
+    padding: 10px;
+  }
+}
 .btn button {
   width: 180px;
   height: 45px;

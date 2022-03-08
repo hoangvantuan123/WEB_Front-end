@@ -117,3 +117,25 @@
 
 
 }
+
+@media screen and (max-width: 1024px) {
+    .footer{
+        .container{
+            .parent{
+                grid-template-columns: repeat(4, 240px);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .footer{
+        .container{
+            .parent{
+                grid-template-columns: repeat(4, 175px);
+                .box {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

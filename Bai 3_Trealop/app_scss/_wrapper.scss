@@ -180,3 +180,110 @@ nav {
 .wrapper input[type="checkbox"] {
     display: none;
 }
+
+
+
+/*  */
+
+@media screen and (max-width: 992px) {
+
+
+    nav {
+        .container-menu{
+            width: auto;
+            flex-direction: row-reverse;
+
+            .menu-icon {
+                display: block;
+                color: rgb(241, 241, 241);
+                font-size: 25px;
+            }
+
+            #show-menu:checked~.menu-icon i::before {
+                content: '\f00d';
+
+            }
+
+            .menu {
+                position: absolute;
+                display: block;
+                background: #fffffff7;
+                height: auto;
+                width: 50%;
+                top: 150px;
+                right: -100%;
+                margin-right: 0;
+                overflow-y: auto;
+                transition: all 1s ease;
+                z-index: 3;
+                border-radius: 20px;
+
+            }
+
+            #show-menu:checked~.menu {
+                right: 0;
+                /*Nằm sát bên trái*/
+
+
+
+            }
+
+            .menu li {
+                margin: 15px 20px;
+            }
+
+            .menu li a,
+            .menu li label {
+                width: 100%;
+                line-height: 30px;
+                font-size: 18px;
+                font-weight: 800;
+                display: block;
+                margin: 0 auto;
+                padding: 10px;
+                cursor: pointer;
+                color: #000;
+
+
+            }
+
+            .menu li .menu-link {
+                display: none;
+            }
+
+            .menu ul {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                background: none;
+                max-height: 0px;
+                overflow: hidden;
+                z-index: 3;
+            }
+
+            .menu #show-item1:checked~ul,
+            .menu #show-item2:checked~ul,
+            .menu #show-item3:checked~ul,
+            .menu #show-item4:checked~ul,
+            .menu #show-item5:checked~ul,
+            .menu #show-item6:checked~ul,
+            .menu #show-item7:checked~ul {
+                max-height: 100vh;
+            }
+
+            .menu-child li a {
+                padding: 20px;
+                color: black;
+
+            }
+        }
+
+        }
+
+
+
+}
+
+
+
+
