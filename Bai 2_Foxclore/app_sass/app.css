@@ -496,10 +496,6 @@ nav .menu-search .search-icon ion-icon {
   grid-area: 2/3/3/4;
 }
 
-.col_item-image img {
-  width: 350px;
-  height: 230px;
-}
 .col_item-text {
   margin-top: 30px;
 }
@@ -516,6 +512,38 @@ nav .menu-search .search-icon ion-icon {
   font-weight: 400;
   margin-top: 20px;
   opacity: 0.9;
+}
+
+.col_item-image {
+  position: relative;
+}
+.col_item-image:hover .filter__hover {
+  display: block;
+}
+.col_item-image img {
+  display: block;
+  width: 350px;
+}
+.col_item-image .filter__hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ebebeb5e;
+  display: none;
+  cursor: pointer;
+}
+.col_item-image .filter__hover ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 45px;
+  color: #41C379;
 }
 
 @media screen and (max-width: 1024px) {
