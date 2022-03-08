@@ -1,0 +1,45 @@
+.slide {
+    position: relative;
+    min-height: 600px;
+    background-image: url(../app_images/2b314e6ad8d714894dc6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        background-color: rgba(0, 0, 0, .55);
+        min-height: 600px;
+
+        .title {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+
+            &_1 {
+                h4{
+                    font-size:20px;
+                    font-family: $font;
+                    font-weight: 300;
+                    letter-spacing: 3px;
+                }
+            }
+            &_2{
+                h2{
+                    font-size: 3em;
+                    font-family: $font1;
+                    font-weight:400;
+                }
+                p{
+                    font-size: 15px;
+                    font-family: $font;
+                    margin: 10px 0 40px ;
+                    font-weight:300;
+
+                }
+            }
+        }
+    }
+}
