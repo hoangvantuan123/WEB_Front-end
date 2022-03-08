@@ -56,37 +56,40 @@ h6 {
   margin: 0 auto;
   justify-content: center;
 }
-.wrapper header {
+
+header {
   background-color: #F4F4F4;
-  height: 60px;
+  min-height: 60px;
   justify-content: center;
   align-items: center;
 }
-.wrapper header .header-content {
+header .header-content {
   max-width: 1250px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: center;
   margin: 0 auto;
   padding: 20px;
 }
-.wrapper header .header-content .header-left,
-.wrapper header .header-content .info-sdt,
-.wrapper header .header-content .info-email,
-.wrapper header .header-content .header-right ul,
-.wrapper header .header-content li, .wrapper header .header-content a {
+header .header-content .header-left,
+header .header-content .info-sdt,
+header .header-content .info-email,
+header .header-content .header-right ul,
+header .header-content li,
+header .header-content a {
   display: flex;
   gap: 0 30px;
   text-decoration: none;
   color: #53D3DE;
 }
-.wrapper header .header-content .info-sdt, .wrapper header .header-content .info-email {
+header .header-content .info-sdt,
+header .header-content .info-email {
   gap: 0 10px;
   color: black;
 }
-.wrapper header .header-content .info-sdt h6, .wrapper header .header-content .info-email h6 {
+header .header-content .info-sdt h6,
+header .header-content .info-email h6 {
   font-size: 12px;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
@@ -232,7 +235,7 @@ nav .container-menu {
     display: block;
     background: #fffffff7;
     height: auto;
-    width: 30%;
+    width: 100%;
     top: 150px;
     right: 100vh;
     margin-left: 0;
@@ -285,6 +288,27 @@ nav .container-menu .menu #show-item7:checked ~ ul {
   nav .container-menu .menu-child li a {
     padding: 20px;
     color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .header-content {
+    display: inline-block;
+    flex-direction: column;
+  }
+  header .header-content .header-left {
+    position: relative;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  header .header-content .header-right ul {
+    padding: 0;
+  }
+  header .header-content .info-sdt, header .header-content .info-email, header .header-content ul {
+    margin-bottom: 10px;
+  }
+
+  nav .container-menu .menu {
+    top: 210px;
   }
 }
 .slides {
