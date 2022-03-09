@@ -27,6 +27,7 @@
                 }
             }
             &_2{
+                max-width: 600px;
                 h2{
                     font-size: 3em;
                     font-family: $font1;
@@ -38,6 +39,30 @@
                     margin: 10px 0 40px ;
                     font-weight:300;
 
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .slide{
+        .container{
+            padding:20px;
+            .title{
+                h4{
+                    max-width: 240px;
+                    font-size: 14px;
+                    margin: 0 auto;
+
+                }
+                &_2{
+                    margin-top:10px;
+                    min-width: 320px;
+                    h2{
+                        font-size: 25px;
+                    }
                 }
             }
         }

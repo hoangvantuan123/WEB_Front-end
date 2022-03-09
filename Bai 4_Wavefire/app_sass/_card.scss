@@ -8,6 +8,20 @@
     padding: 30px;
 }
 
+.card-title {
+    margin-top: 50px;
+
+    h4 {
+        font-size: 26px;
+        opacity: 0.8;
+
+    }
+
+    p {
+        opacity: 0.8;
+    }
+}
+
 .card__md1 {
     min-height: 760px;
 
@@ -19,6 +33,7 @@
         &__box {
             width: 300px;
             margin: 0 auto;
+            padding: 14px;
 
             .card-item {
                 width: 150px;
@@ -50,6 +65,10 @@
                 }
             }
         }
+    }
+
+    .btn {
+        margin-top: 40px;
     }
 
 }
@@ -91,9 +110,11 @@
 }
 
 .card__md3 {
-    min-height:600px;
+    min-height: 600px;
+    padding-bottom: 40px;
+
     .parent {
-        position:relative;
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 200px);
@@ -126,29 +147,103 @@
     .div6 {
         grid-area: 2 / 3 / 3 / 4;
     }
-    .md-box{
+
+    .md-box {
         display: flex;
         gap: 0 20px;
 
-        .md-icon{
-            font-size:45px;
+
+        .md-icon {
+            font-size: 45px;
         }
-        .md-text{
-            text-align:left;
+
+        .md-text {
+            text-align: left;
+
+            h4 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+                font-family: $font;
+                max-width: 280px;
+                margin-bottom: 30px;
+                opacity: 0.8;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                opacity: 0.8;
+            }
         }
     }
 }
-.card__md4{
+
+.card__md4 {
     background-color: #F4F4F4;
-    .card-content{
+    padding-bottom: 40px;
+
+    .card-content {
         display: flex;
         gap: 0 40px;
         margin-top: 50px;
         margin-bottom: 60px;
-        &__box{
-            width: 350px;
+
+        &__box {
+            max-width: 350px;
             min-height: 400px;
-            border: 1px solid #797979;
+            border: 1px solid #a1a1a1;
+            margin: 0 auto;
+            .card-text {
+                padding: 17px;
+                text-align: left;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-family: $font;
+                    opacity: 0.9;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    ;
+                }
+
+                span {
+                    font-size: 13px;
+                    color: $color;
+                    font-weight: 700;
+                    flex: 1;
+                    font-family: $font;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-card {
+
+        .card-content,
+        .card__content {
+            flex-direction: column;
+            gap: 30px 0;
+        }
+
+        .card__md3 {
+            .parent {
+                display: inline-block;
+                .md-box{
+                    margin-bottom: 40px;
+                }
+            }
         }
     }
 }
