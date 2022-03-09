@@ -143,8 +143,8 @@ h6 {
 
 .menu-child {
     border: 0px solid rgb(255, 255, 255);
-    min-width: 200px;
-    background-color: #97a9bdaf;
+    min-width: 180px;
+    background-color: #97a9bd7c;
 }
 
 .menu-child-link {
@@ -408,7 +408,8 @@ h6 {
 
     background-color: #97A9BD;
 }
-.columns_2-hero .hero-box:hover .title a{
+
+.columns_2-hero .hero-box:hover .title a {
     color: #ffff;
 }
 
@@ -609,12 +610,14 @@ h6 {
     width: 200px;
     height: 200px;
     line-height: 200px;
+
 }
 
 .container-run .container .chart canvas {
     position: absolute;
     top: 0;
     left: 0;
+
 }
 
 
@@ -960,6 +963,10 @@ h6 {
 .info-left .info-box:hover .info-icons {
     background-color: #ffff;
 }
+.info-left .info-box:hover .info-text{
+    color:#ffffff;
+    opacity: 1;
+}
 
 .info-left .box-hover__1:hover .info-icons i {
     color: #A197BD;
@@ -1035,7 +1042,7 @@ h6 {
 
 .footer-col {
     display: grid;
-    grid-template-columns: repeat(4,260px);
+    grid-template-columns: repeat(4, 260px);
     grid-template-rows: 1fr;
     grid-column-gap: 50px;
     grid-row-gap: 0px;
@@ -1116,7 +1123,7 @@ h6 {
 
 .col_3 .footer-md {
     display: grid;
-    grid-template-columns: repeat(3,70px);
+    grid-template-columns: repeat(3, 70px);
     grid-template-rows: repeat(3, 70px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -1160,7 +1167,7 @@ h6 {
 }
 
 
-.box__hover{
+.box__hover {
     position: relative;
 }
 
@@ -1172,12 +1179,12 @@ h6 {
     right: 0;
     height: 100%;
     width: 100%;
-    display:none;
+    display: none;
     background-color: #ffffff5e;
     cursor: pointer;
 }
 
- .footer-md .filter__hover ion-icon {
+.footer-md .filter__hover ion-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1193,24 +1200,26 @@ h6 {
     display: block;
 }
 
-.footer-col_2{
+.footer-col_2 {
     width: 100%;
     min-height: 65px;
     background-color: #282E39;
 
 }
-.footer-col_2 .content{
+
+.footer-col_2 .content {
     max-width: 1250px;
     display: flex;
-    justify-content:space-between;
-    margin:0 auto ;
+    justify-content: space-between;
+    margin: 0 auto;
     padding: 20px;
-    color:#ffff;
+    color: #ffff;
 }
-.footer-col_2 .content h5{
-   font-family: "Roboto", sans-serif;
-   opacity: 0.7;
-   font-weight: 100;
+
+.footer-col_2 .content h5 {
+    font-family: "Roboto", sans-serif;
+    opacity: 0.7;
+    font-weight: 100;
 }
 
 
@@ -1553,7 +1562,8 @@ h6 {
     .container-run .container .item {
         margin-bottom: 50px;
     }
-    .footer-col_2 .content{
+
+    .footer-col_2 .content {
         display: inline-block;
         gap: 20px 0;
     }
