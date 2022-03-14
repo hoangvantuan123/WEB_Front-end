@@ -1,0 +1,140 @@
+header {
+    width: 100%;
+    position: relative;
+    height: 42px;
+    background-color: $color;
+
+    .content {
+
+        .title {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 700px;
+
+            p {
+                font-size: 15px;
+                color: #ffff;
+                font-family: $font;
+                letter-spacing: 3px;
+                text-align: center;
+                padding: 10px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+nav {
+    width: 100%;
+
+    .content {
+        max-width: 1250px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 70px;
+        flex: 1;
+        text-align: center;
+        align-items: center;
+
+        .menu-md_1 {
+
+            ul {
+                display: flex;
+                gap: 0 30px;
+                padding: 0;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: black;
+                        font-family: $font;
+                        flex: 1;
+                    }
+                }
+            }
+        }
+
+        .logo-md_1 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .logo {
+                width: 140px;
+                height: 48px;
+                border: 3px solid black;
+
+                h1 {
+                    padding: 3px;
+                    font-size: 24px;
+                    letter-spacing: 5px;
+                    font-family: $font;
+                }
+            }
+        }
+
+        .search-md_1 {
+            display: flex;
+            gap: 0 40px;
+            .search{
+                width:220px;
+                padding: 2px;
+                border-bottom: 1px solid black;
+                &:hover{
+                    border:2px solid rgb(5, 5, 5) ;
+
+                }
+
+            }
+            .border {
+                display: flex;
+                padding: 0 0 0 5px;
+                color: black;
+                gap: 0 9px;
+                min-height: 40px;
+
+                align-items: center;
+                flex-shrink: 0;
+
+                .high {
+                    ion-icon {
+                        margin-top: 5px;
+                        font-size: 20px;
+                        opacity: 0.7;
+                    }
+                }
+
+                input {
+                    font-family: $font;
+                    font-weight: 400;
+                    max-width:180px;
+                }
+
+            }
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-shrink: 0;
+            gap: 0 10px;
+
+            ion-icon {
+                font-size: 30px;
+            }
+
+            span {
+                font-size: 16px;
+                font-family: $font;
+                opacity: 0.7;
+            }
+
+        }
+    }
+}

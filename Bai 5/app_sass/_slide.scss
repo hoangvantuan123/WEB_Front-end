@@ -1,0 +1,41 @@
+.slide {
+    width: 100%;
+    position: relative;
+
+    .content {
+        margin-top: 80px;
+        width: 1354px;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+
+    .slide-image {
+        width: 1015px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .slide-title {
+        position: absolute;
+        top: 60%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: $font;
+        text-align: left;
+        min-width:800px;
+        h4{
+            font-size: 20.3px;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        h2{
+            font-size: 3.7em;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+        .btn{
+            margin-top: 40px;
+        }
+    }
+}
