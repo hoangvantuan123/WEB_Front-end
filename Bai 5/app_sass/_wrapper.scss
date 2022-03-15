@@ -64,16 +64,19 @@ nav {
         .search-md_1 {
             display: flex;
             gap: 0 40px;
-            .search{
-                width:220px;
+
+            .search {
+                width: 220px;
                 padding: 2px;
                 border-bottom: 1px solid black;
-                &:hover{
-                    border:2px solid rgb(5, 5, 5) ;
+
+                &:hover {
+                    border: 2px solid rgb(5, 5, 5);
 
                 }
 
             }
+
             .border {
                 display: flex;
                 padding: 0 0 0 5px;
@@ -95,7 +98,7 @@ nav {
                 input {
                     font-family: $font;
                     font-weight: 400;
-                    max-width:180px;
+                    max-width: 180px;
                 }
 
             }
@@ -118,6 +121,27 @@ nav {
                 opacity: 0.7;
             }
 
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        .content {
+            padding: 20px;
+
+            .menu-md_1 {
+                .menu {
+                    gap: 0 13px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    nav{
+        .menu-md_1{
+            display: none;
         }
     }
 }

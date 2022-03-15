@@ -143,19 +143,32 @@ nav .content .login span {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 1200px) {
+  nav .content {
+    padding: 20px;
+  }
+  nav .content .menu-md_1 .menu {
+    gap: 0 13px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  nav .menu-md_1 {
+    display: none;
+  }
+}
 .slide {
   width: 100%;
   position: relative;
 }
 .slide .content {
   margin-top: 80px;
-  width: 1354px;
+  max-width: 1350px;
   margin: 0 auto;
   padding-top: 80px;
 }
 .slide .slide-image {
-  width: 1015px;
-  height: 600px;
+  max-width: 1015px;
+  min-height: 600px;
   overflow: hidden;
 }
 .slide .slide-title {
@@ -166,7 +179,7 @@ nav .content .login span {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  min-width: 800px;
+  width: 800px;
 }
 .slide .slide-title h4 {
   font-size: 20.3px;
@@ -182,10 +195,33 @@ nav .content .login span {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .slide .content .slide-image {
+    padding: 0 40px 0 0;
+  }
+  .slide .slide-title {
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .slide .content .slide-image {
+    padding: 0 70px 0 0;
+  }
+  .slide .slide-title {
+    max-width: 500px;
+  }
+  .slide .slide-title h4 {
+    font-size: 18px;
+  }
+  .slide .slide-title h2 {
+    font-size: 3em;
+  }
+}
 .logo-md_1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 .logo-md_1 .logo {
   width: 140px;
@@ -206,7 +242,13 @@ nav .content .login span {
   font-size: 14px;
   color: white;
   font-weight: 100;
-  padding: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: rgba(226, 226, 226, 0.747);
+  border: 1px solid #000000;
+  color: black;
 }
 
 .content-title {
@@ -231,25 +273,29 @@ nav .content .login span {
   max-width: 1250px;
   margin: 0 auto;
 }
-.hero .content .hero-video, .hero .content .hero-module {
+.hero .content .hero-video,
+.hero .content .hero-module {
   display: flex;
   justify-content: center;
   height: auto;
   padding: 20px;
   gap: 0 20px;
 }
-.hero .content .hero-video__text, .hero .content .hero-module__text {
+.hero .content .hero-video__text,
+.hero .content .hero-module__text {
   width: 490px;
   height: 689px;
   padding-left: 140px;
 }
-.hero .content .hero-video__text h4, .hero .content .hero-module__text h4 {
+.hero .content .hero-video__text h4,
+.hero .content .hero-module__text h4 {
   font-size: 28px;
   font-weight: 400;
   max-width: 300px;
   margin-bottom: 50px;
 }
-.hero .content .hero-video__text p, .hero .content .hero-module__text p {
+.hero .content .hero-video__text p,
+.hero .content .hero-module__text p {
   max-width: 350px;
   font-size: 16px;
   font-weight: 400;
@@ -257,7 +303,8 @@ nav .content .login span {
   letter-spacing: 1px;
   opacity: 0.9;
 }
-.hero .content .hero-video__text .btn button, .hero .content .hero-module__text .btn button {
+.hero .content .hero-video__text .btn button,
+.hero .content .hero-module__text .btn button {
   background-color: rgba(255, 255, 255, 0);
   color: #000000;
   border: 1px solid #000000;
@@ -265,13 +312,20 @@ nav .content .login span {
   opacity: 1;
   font-weight: 400;
 }
+.hero .content .hero-video__text .btn button:hover,
+.hero .content .hero-module__text .btn button:hover {
+  background-color: #5E5E4A;
+  transition: all 0.5s ease;
+  color: #ffff;
+}
 .hero .content .hero-module {
   margin-top: 70px;
-  height: 700px;
+  height: 740px;
 }
 .hero .content .hero-module__image {
   width: 455px;
   height: 650px;
+  padding: 15px;
 }
 .hero .content .hero-module__image__filter {
   background-color: #5E5E4A;
@@ -295,6 +349,11 @@ nav .content .login span {
   padding-left: 10px;
 }
 
+@media only screen and (max-width: 992px) {
+  .hero .content .hero-video .hero-video__text {
+    padding-left: 0px;
+  }
+}
 .card-content__a {
   width: 100%;
   min-height: 700px;
@@ -363,20 +422,17 @@ nav .content .login span {
   position: absolute;
   font-size: 2em;
   opacity: 0.7;
+  margin-top: 160px;
 }
 .card-content__row2 #previous {
-  margin-left: 10px;
-  margin-top: 150px;
+  margin-left: 30px;
 }
 .card-content__row2 #next {
-  position: absolute;
-  margin-left: 1200px;
-  margin-top: 173px;
-  transform: translate(50%, -50%);
+  margin-left: -48px;
 }
 
 .card-content__b {
-  width: 1250px;
+  max-width: 1250px;
   justify-content: center;
   text-align: center;
   align-self: center;
@@ -447,8 +503,8 @@ nav .content .login span {
   cursor: pointer;
 }
 .content-blog__item img {
-  width: 268px;
-  height: 359px;
+  max-width: 268px;
+  max-height: 359px;
 }
 .content-blog__item .content-blog__text {
   margin-top: 25px;
@@ -468,6 +524,42 @@ nav .content .login span {
   font-size: 15px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .card-content__row2 .carousel {
+    max-width: 910px;
+    padding: 20px;
+  }
+  .card-content__row2 .carousel .carousel__images {
+    gap: 0 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card-content__row2 .carousel {
+    max-width: 750px;
+    padding: 20px;
+  }
+  .card-content__row2 .carousel .carousel-list__item {
+    max-width: 200px;
+  }
+  .card-content__row2 .carousel .carousel-list__item img {
+    max-width: 200px;
+    max-height: 250px;
+  }
+
+  .card-content__c .content-blog {
+    gap: 0 40px;
+  }
+  .card-content__c .content-blog__item img {
+    max-width: 245px;
+    height: 300px;
+  }
+  .card-content__c .content-blog__item h4 {
+    max-width: 220px;
+  }
+  .card-content__c .content-blog__item p {
+    max-width: 200px;
+  }
+}
 .footer {
   width: 100%;
   min-height: 400px;
@@ -523,6 +615,20 @@ nav .content .login span {
 
 .div5 {
   grid-area: 2/3/3/4;
+}
+
+@media only screen and (max-width: 1200px) {
+  .parent {
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .parent {
+    padding: 30px;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

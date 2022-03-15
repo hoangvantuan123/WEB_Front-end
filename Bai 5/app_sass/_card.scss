@@ -6,8 +6,9 @@
     .content {
         max-width: 1250px;
         margin: 0 auto;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
+
         &-title {
             padding-top: 90px;
             margin-bottom: 90px;
@@ -21,6 +22,7 @@
             overflow: hidden;
             width: 1100px;
             cursor: pointer;
+
             &__images {
                 display: flex;
                 transform: translate(0);
@@ -29,7 +31,6 @@
 
                 .carousel-list__item {
                     width: 230px;
-
                     border-radius: 10px;
                     object-fit: cover;
 
@@ -38,18 +39,22 @@
                         height: 300px;
                         margin-bottom: 15px;
                     }
-                    .carousel-list__title{
+
+                    .carousel-list__title {
                         font-family: $font;
-                        h5{
-                            font-size:16px;
+
+                        h5 {
+                            font-size: 16px;
                             font-weight: 400;
                             margin-bottom: 5px;
                         }
-                        h6{
-                            font-size:13px;
+
+                        h6 {
+                            font-size: 13px;
                             font-weight: 400;
                             word-spacing: 9px;
-                            span{
+
+                            span {
                                 text-decoration: line-through;
                             }
                         }
@@ -68,9 +73,11 @@
     }
 
 }
-.card-content__row2{
+
+.card-content__row2 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+
     i {
         cursor: pointer;
         z-index: 1;
@@ -78,71 +85,78 @@
         position: absolute;
         font-size: 2em;
         opacity: 0.7;
-    }
-    #previous {
-        margin-left: 10px;
-        margin-top: 150px;
-    }
-    #next{
-        position:absolute;
-        margin-left: 1200px;
-        margin-top:173px;
-        transform: translate(50%, -50%);
+        margin-top: 160px;
 
+
+    }
+
+    #previous {
+        margin-left: 30px;
+    }
+
+    #next {
+        margin-left: -48px;
     }
 }
 
-.card-content__b{
-    width:1250px;
-    justify-content:center;
-    text-align:center;
+.card-content__b {
+    max-width: 1250px;
+    justify-content: center;
+    text-align: center;
     align-self: center;
     margin: 0 auto;
-    .content-title{
-        p{
-            max-width:616px;
+
+    .content-title {
+        p {
+            max-width: 616px;
             margin: 0 auto;
             font-family: $font;
-            font-weight:400;
-            letter-spacing:1px;
+            font-weight: 400;
+            letter-spacing: 1px;
             padding: 10px;
             margin-bottom: 40px;
         }
-        .btn{
-            button{
+
+        .btn {
+            button {
                 background-color: rgba(255, 255, 255, 0);
                 color: #000000;
                 border: 1px solid #000000;
-                padding:10px;
+                padding: 10px;
                 opacity: 1;
                 font-weight: 400;
                 cursor: pointer;
-                &:hover{
-                    background-color:$color;
+
+                &:hover {
+                    background-color: $color;
                     transition: all 0.5s ease;
-                    color:#ffff;
+                    color: #ffff;
 
                 }
             }
         }
     }
-    .content-images{
+
+    .content-images {
         margin-top: 65px;
-        &__A{
-            img{
+
+        &__A {
+            img {
 
                 margin: 0 auto;
-                width:872px;
+                width: 872px;
                 height: 522px;
             }
 
         }
-        &__B{
-            margin-top:-338px;
-            img{
+
+        &__B {
+            margin-top: -338px;
+
+            img {
 
                 width: 505px;
-                height:650px;
+                height: 650px;
                 margin: 0 auto;
             }
 
@@ -151,54 +165,119 @@
 
     }
 }
-.card-content__c{
+
+.card-content__c {
     background-color: #F3F3EF;
     min-height: 800px;
-    .btn{
+
+    .btn {
         width: 138px;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         padding-top: 80px;
-        button{
-            width: 138px;
-            height:40px;
 
-            position:relative;
+        button {
+            width: 138px;
+            height: 40px;
+
+            position: relative;
             font-family: $font;
         }
     }
 }
-.content-blog{
+
+.content-blog {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 0 50px;
     cursor: pointer;
-    &__item{
-        img{
-            width: 268px;
-            height: 359px;
+
+    &__item {
+        img {
+            max-width: 268px;
+            max-height: 359px;
         }
-        .content-blog__text{
-            margin-top:25px;
+
+        .content-blog__text {
+            margin-top: 25px;
             font-family: $font;
 
 
-            h4{
-                    font-size: 20px;
-                    font-weight: 600;
-                    max-width:250px;
-                    flex:1;
-                    opacity: 0.9;
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                max-width: 250px;
+                flex: 1;
+                opacity: 0.9;
 
             }
-            p{
-                margin-top:20px;
-                max-width:260px;
+
+            p {
+                margin-top: 20px;
+                max-width: 260px;
                 opacity: 0.8;
                 font-size: 15px;
             }
         }
     }
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .card-content__row2 {
+
+        .carousel {
+            max-width: 910px;
+            padding: 20px;
+
+            .carousel__images {
+                gap: 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .card-content__row2 {
+        .carousel {
+            max-width: 750px;
+            padding: 20px;
+
+            .carousel-list__item {
+                max-width: 200px;
+
+
+                img {
+                    max-width: 200px;
+                    max-height: 250px;
+
+                }
+            }
+
+        }
+    }
+
+    .card-content__c {
+        .content-blog {
+            gap: 0 40px;
+
+            &__item {
+                img {
+                    max-width: 245px;
+                    height: 300px;
+                }
+                h4 {
+                    max-width: 220px;
+                }
+
+                p {
+                    max-width: 200px;
+
+                }
+
+            }
+        }
+
+    }
 }

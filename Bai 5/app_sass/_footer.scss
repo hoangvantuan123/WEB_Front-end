@@ -1,13 +1,15 @@
 .footer {
     width: 100%;
-    min-height:400px;
-    .content{
-            max-width: 900px;
-           justify-content:center;
-                 align-items: center;
-                 margin: 0 auto;
+    min-height: 400px;
+
+    .content {
+        max-width: 900px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 350px);
@@ -16,21 +18,26 @@
     grid-row-gap: 31px;
     margin-top: 90px;
     font-family: $font;
-    .item{
-        h3{
-            font-size:25px;
+
+    .item {
+
+        h3 {
+
+            font-size: 25px;
             font-weight: 400;
         }
-        ul{
+
+        ul {
             list-style: none;
-                padding: 0;
-                margin-top: 20px;
-                font-size: 15px;
-                line-height:24px;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 24px;
 
         }
-        &-icon{
-            ul{
+
+        &-icon {
+            ul {
                 display: flex;
                 gap: 0 20px;
                 font-size: 23px;
@@ -59,3 +66,16 @@
     grid-area: 2 / 3 / 3 / 4;
 }
 
+@media only screen and (max-width: 1200px) {
+    .parent {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 992px) {
+    .parent{
+        padding: 30px;
+        grid-template-columns: repeat(3, 230px);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

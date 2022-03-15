@@ -11,7 +11,8 @@
 
 
 
-        .hero-video , .hero-module {
+        .hero-video,
+        .hero-module {
             display: flex;
             justify-content: center;
             height: auto;
@@ -22,6 +23,7 @@
                 width: 490px;
                 height: 689px;
                 padding-left: 140px;
+
                 h4 {
                     font-size: 28px;
                     font-weight: 400;
@@ -34,18 +36,24 @@
                     font-size: 16px;
                     font-weight: 400;
                     margin-bottom: 50px;
-                    letter-spacing:1px;
+                    letter-spacing: 1px;
                     opacity: 0.9;
                 }
 
                 .btn {
-                    button{
+                    button {
                         background-color: rgba(255, 255, 255, 0);
                         color: #000000;
                         border: 1px solid #000000;
-                        padding:5px;
+                        padding: 5px;
                         opacity: 1;
                         font-weight: 400;
+
+                        &:hover {
+                            background-color: $color;
+                            transition: all 0.5s ease;
+                            color: #ffff;
+                        }
                     }
                 }
 
@@ -54,35 +62,58 @@
 
 
         }
-        .hero-module{
+
+        .hero-module {
             margin-top: 70px;
-            height:700px;
-            &__image{
-                width:455px;
+            height: 740px;
+
+            &__image {
+                width: 455px;
                 height: 650px;
-                &__filter{
+                padding: 15px;
+
+                &__filter {
                     background-color: $color;
-                    width:409px;
+                    width: 409px;
                     height: 650px;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-7%,5%);
+                    transform: translate(-7%, 5%);
                 }
-                img{
-                    width:455px;
+
+                img {
+                    width: 455px;
                     height: 650px;
                     top: 50%;
                     left: 50%;
-                    transform: translate(0%,-100%);
+                    transform: translate(0%, -100%);
                 }
             }
-            &__text{
+
+            &__text {
                 height: 650px;
-               padding-top: 120px;
-                position:relative;
-                padding-left:10px;
+                padding-top: 120px;
+                position: relative;
+                padding-left: 10px;
             }
         }
     }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .hero{
+        .content{
+            .hero-video{
+                .hero-video__text{
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+
+
+
 
 }

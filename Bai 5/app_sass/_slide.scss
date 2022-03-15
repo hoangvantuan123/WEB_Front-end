@@ -4,14 +4,14 @@
 
     .content {
         margin-top: 80px;
-        width: 1354px;
+        max-width: 1350px;
         margin: 0 auto;
         padding-top: 80px;
     }
 
     .slide-image {
-        width: 1015px;
-        height: 600px;
+        max-width: 1015px;
+        min-height: 600px;
         overflow: hidden;
     }
 
@@ -23,19 +23,60 @@
         text-align: center;
         font-family: $font;
         text-align: left;
-        min-width:800px;
-        h4{
+        width: 800px;
+
+        h4 {
             font-size: 20.3px;
             font-weight: 500;
             letter-spacing: 3px;
         }
-        h2{
+
+        h2 {
+
             font-size: 3.7em;
             font-weight: 400;
             letter-spacing: 4px;
         }
-        .btn{
+
+        .btn {
             margin-top: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .slide {
+        .content {
+            .slide-image {
+                padding: 0 40px 0 0 ;
+            }
+        }
+        .slide-title{
+            max-width: 600px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    .slide {
+        .content {
+            .slide-image {
+                padding: 0 70px 0 0 ;
+            }
+        }
+        .slide-title{
+            max-width: 500px;
+
+        h4 {
+            font-size: 18px;
+
+        }
+
+        h2 {
+
+            font-size: 3em;
+
+        }
+
         }
     }
 }
