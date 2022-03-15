@@ -96,22 +96,6 @@ nav .content .menu-md_1 ul li a {
   font-family: "Open Sans", sans-serif;
   flex: 1;
 }
-nav .content .logo-md_1 {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-nav .content .logo-md_1 .logo {
-  width: 140px;
-  height: 48px;
-  border: 3px solid black;
-}
-nav .content .logo-md_1 .logo h1 {
-  padding: 3px;
-  font-size: 24px;
-  letter-spacing: 5px;
-  font-family: "Open Sans", sans-serif;
-}
 nav .content .search-md_1 {
   display: flex;
   gap: 0 40px;
@@ -198,6 +182,23 @@ nav .content .login span {
   margin-top: 40px;
 }
 
+.logo-md_1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-md_1 .logo {
+  width: 140px;
+  height: 48px;
+  border: 3px solid black;
+}
+.logo-md_1 .logo h1 {
+  padding: 3px;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
 .btn button {
   width: 139px;
   height: 39px;
@@ -217,6 +218,7 @@ nav .content .login span {
   font-weight: 300;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .hero {
@@ -264,7 +266,8 @@ nav .content .login span {
   font-weight: 400;
 }
 .hero .content .hero-module {
-  padding: 90px 20 10px;
+  margin-top: 70px;
+  height: 700px;
 }
 .hero .content .hero-module__image {
   width: 455px;
@@ -287,9 +290,239 @@ nav .content .login span {
 }
 .hero .content .hero-module__text {
   height: 650px;
-  margin-top: 160px;
+  padding-top: 120px;
   position: relative;
   padding-left: 10px;
+}
+
+.card-content__a {
+  width: 100%;
+  min-height: 700px;
+  background-color: #D7D7CB;
+}
+.card-content__a .content {
+  max-width: 1250px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.card-content__a .content-title {
+  padding-top: 90px;
+  margin-bottom: 90px;
+}
+.card-content__a .content .carousel {
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin: 2rem auto;
+  overflow: hidden;
+  width: 1100px;
+  cursor: pointer;
+}
+.card-content__a .content .carousel__images {
+  display: flex;
+  transform: translate(0);
+  transition: all 0.25s;
+  gap: 0 60px;
+}
+.card-content__a .content .carousel__images .carousel-list__item {
+  width: 230px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-content__a .content .carousel__images .carousel-list__item img {
+  width: 230px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.card-content__a .content .carousel__images .carousel-list__item .carousel-list__title {
+  font-family: "Open Sans", sans-serif;
+}
+.card-content__a .content .carousel__images .carousel-list__item .carousel-list__title h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.card-content__a .content .carousel__images .carousel-list__item .carousel-list__title h6 {
+  font-size: 13px;
+  font-weight: 400;
+  word-spacing: 9px;
+}
+.card-content__a .content .carousel__images .carousel-list__item .carousel-list__title h6 span {
+  text-decoration: line-through;
+}
+
+.card-content__row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.card-content__row2 i {
+  cursor: pointer;
+  z-index: 1;
+  height: 3rem;
+  position: absolute;
+  font-size: 2em;
+  opacity: 0.7;
+}
+.card-content__row2 #previous {
+  margin-left: 10px;
+  margin-top: 150px;
+}
+.card-content__row2 #next {
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 173px;
+  transform: translate(50%, -50%);
+}
+
+.card-content__b {
+  width: 1250px;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+.card-content__b .content-title p {
+  max-width: 616px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.card-content__b .content-title .btn button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px;
+  opacity: 1;
+  font-weight: 400;
+  cursor: pointer;
+}
+.card-content__b .content-title .btn button:hover {
+  background-color: #5E5E4A;
+  transition: all 0.5s ease;
+  color: #ffff;
+}
+.card-content__b .content-images {
+  margin-top: 65px;
+}
+.card-content__b .content-images__A img {
+  margin: 0 auto;
+  width: 872px;
+  height: 522px;
+}
+.card-content__b .content-images__B {
+  margin-top: -338px;
+}
+.card-content__b .content-images__B img {
+  width: 505px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+.card-content__c {
+  background-color: #F3F3EF;
+  min-height: 800px;
+}
+.card-content__c .btn {
+  width: 138px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.card-content__c .btn button {
+  width: 138px;
+  height: 40px;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-blog {
+  display: flex;
+  justify-content: center;
+  gap: 0 50px;
+  cursor: pointer;
+}
+.content-blog__item img {
+  width: 268px;
+  height: 359px;
+}
+.content-blog__item .content-blog__text {
+  margin-top: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+.content-blog__item .content-blog__text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 250px;
+  flex: 1;
+  opacity: 0.9;
+}
+.content-blog__item .content-blog__text p {
+  margin-top: 20px;
+  max-width: 260px;
+  opacity: 0.8;
+  font-size: 15px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 400px;
+}
+.footer .content {
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 31px;
+  margin-top: 90px;
+  font-family: "Open Sans", sans-serif;
+}
+.parent .item h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.parent .item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.parent .item-icon ul {
+  display: flex;
+  gap: 0 20px;
+  font-size: 23px;
+}
+
+.div1 {
+  grid-area: 1/1/3/2;
+}
+
+.div2 {
+  grid-area: 1/2/2/3;
+}
+
+.div3 {
+  grid-area: 1/3/2/4;
+}
+
+.div4 {
+  grid-area: 2/2/3/3;
+}
+
+.div5 {
+  grid-area: 2/3/3/4;
 }
 
 /*# sourceMappingURL=app.css.map */

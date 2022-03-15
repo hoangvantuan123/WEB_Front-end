@@ -55,7 +55,8 @@
 
         }
         .hero-module{
-            padding: 90px 20 10px;
+            margin-top: 70px;
+            height:700px;
             &__image{
                 width:455px;
                 height: 650px;
@@ -77,7 +78,7 @@
             }
             &__text{
                 height: 650px;
-                margin-top:160px;
+               padding-top: 120px;
                 position:relative;
                 padding-left:10px;
             }
