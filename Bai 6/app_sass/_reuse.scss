@@ -4,6 +4,22 @@
     align-items:center;
     margin: 0 auto;
 }
+.logo{
+    width:165px;
+    height:60px;
+    background-color:$color;
+    align-items: center;
+    border-radius: 0 0 13px 13px;
+    h1{
+        padding: 10px;
+        color:#ffff;
+      font-style: italic;
+      font-family: $fontlogo;
+      font-size: 24px;
+      font-weight: 600;
+
+    }
+}
 
 .content-title__stores {
     display: flex;

@@ -56,9 +56,11 @@ $fontserif:'Bree Serif', serif;
 $fontlogo:'Pacifico', cursive;
 
 $color :#DA392B;
+$color1:#3a3a3acb;
 
 
 @import './wrapper';
 @import './reuse';
 @import './card';
 @import './infovslogin';
+@import './footer';
