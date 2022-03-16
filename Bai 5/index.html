@@ -28,34 +28,46 @@
         </header>
         <nav>
             <div class="content">
-                <div class="menu-md_1">
+                <div class="menu-md_1"id="orderA" >
+                    <input type="checkbox" name="" id="show-search">
+                    <input type="checkbox" name="" id="show-menu">
+                    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
                     <ul class="menu">
                         <li class="menu-item">
                             <a href="#" class="menu-link">SHOP</a>
+                            <input type="checkbox" id="show-item1">
+                            <label for="show-item1"> <a>HOME</a></label>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">OUR STORY</a>
+                            <input type="checkbox" id="show-item2">
+                            <label for="show-item2"> <a>OUR STORY</a></label>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">BLOG</a>
+                            <input type="checkbox" id="show-item3">
+                            <label for="show-item3"> <a>BLOG</a></label>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">SALE</a>
+                            <input type="checkbox" id="show-item4">
+                            <label for="show-item4"> <a>SALE</a></label>
                         </li>
                         <li class="menu-item">
                             <a href="#" class="menu-link">CONTACT</a>
+                            <input type="checkbox" id="show-item5">
+                            <label for="show-item5"> <a>HOME</a></label>
                         </li>
                     </ul>
-
                 </div>
-                <div class="logo-md_1">
+                <div class="logo-md_1"id="orderB">
                     <div class="logo">
                         <h1>
                             FRAIS
                         </h1>
                     </div>
                 </div>
-                <div class="search-md_1">
+                <div class="search-md_1"id="orderC">
                     <div class="search">
                         <div class="border">
                             <div class="high">
@@ -123,7 +135,7 @@
                 <!-- Note : https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit  // https://developer.mozilla.org/fr/docs/Web/CSS/object-fit  -->
                 <!-- Cách giải quyết vấn đề bài toán video cần crop  -->
                 <div class="hero-video__videos">
-                    <video id=" glass" width="100%" height="100%" style="width: 490px; height: 689px; object-fit:cover;"
+                    <video id=" glass" width="100%" height="100%" style="max-width: 490px; max-height: 689px; object-fit:cover;"
                         autoplay muted loop="loop" playsinline>
                         <source src="./app_image/Image_2.mp4" type="">
                     </video>

@@ -20,8 +20,8 @@
             gap: 0 20px;
 
             &__text {
-                width: 490px;
-                height: 689px;
+                max-width: 490px;
+                min-height: 689px;
                 padding-left: 140px;
 
                 h4 {
@@ -65,17 +65,17 @@
 
         .hero-module {
             margin-top: 70px;
-            height: 740px;
+            max-height: 740px;
 
             &__image {
-                width: 455px;
-                height: 650px;
+                max-width: 455px;
+                max-height: 650px;
                 padding: 15px;
 
                 &__filter {
                     background-color: $color;
-                    width: 409px;
-                    height: 650px;
+                   max-width: 409px;
+                    min-height: 650px;
                     top: 50%;
                     left: 50%;
                     transform: translate(-7%, 5%);
@@ -91,7 +91,7 @@
             }
 
             &__text {
-                height: 650px;
+                min-height: 650px;
                 padding-top: 120px;
                 position: relative;
                 padding-left: 10px;
@@ -103,17 +103,63 @@
 
 
 @media only screen and (max-width: 992px) {
-    .hero{
-        .content{
-            .hero-video{
-                .hero-video__text{
+    .hero {
+        .content {
+            .hero-video {
+                .hero-video__text {
                     padding-left: 0px;
                 }
             }
         }
     }
+}
 
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .hero {
+        .content {
+            .hero-video {
+                display: flex;
+                flex-direction: column-reverse;
+                padding:0px;
+                &__videos{
+                    video{
+                        max-height:auto;
+                        max-width:auto;
+                    }
+                }
+                &__text{
+                    align-items: center;
+                    text-align: center;
+                    margin: 0 auto;
+                    max-width:auto;
 
+                }
+            }
+            .hero-module{
+                flex-direction: column;
 
+                &__image{
 
+                    &__filter{
+                        max-width:auto;
+                        min-height: 420px;
+
+                    }
+                    img{
+                        max-width:auto;
+                        height:auto;
+                    }
+                }
+                &__text{
+                    padding: 0px;
+                    margin-top: -100px;
+                    p{
+                        padding:10px;
+                    }
+                }
+            }
+        }
+
+    }
 }

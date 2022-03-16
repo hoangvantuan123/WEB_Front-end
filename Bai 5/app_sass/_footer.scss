@@ -79,3 +79,12 @@
         grid-template-rows: repeat(2, 1fr);
     }
 }
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .parent{
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        align-items: center;
+    }
+}
