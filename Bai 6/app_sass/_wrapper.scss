@@ -1,0 +1,93 @@
+.wrapper {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../app_images/c837a6_aa803204cef842e0b9ad7d820e64f77c_mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content{
+         max-width: 1200px;
+         justify-content:center;
+         align-items:center;
+         margin: 0 auto;
+    }
+
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    flex: 1;
+    .logo{
+        width:165px;
+        height:60px;
+        background-color:$color;
+        align-items: center;
+        border-radius: 0 0 13px 13px;
+        h1{
+            padding: 10px;
+            color:#ffff;
+          font-style: italic;
+          font-family: $fontlogo;
+          font-size: 24px;
+          font-weight: 600;
+
+        }
+    }
+    .background{
+
+        width: 500px;
+        background-color:#ffff;
+        height: 60px;
+        border-radius: 0 0 13px 13px;
+        .menu{
+            display: flex;
+            padding: 0;
+            li{
+                width: 100px;
+                height: 60px;
+                align-items:center;
+                text-align: center;
+                line-height:50px;
+
+
+            }
+            .col__title{
+                background-color:$color;
+                border-radius: 0 0 0 13px;
+               a{
+                color: #ffff;
+               }
+            }
+            li , a{
+                text-decoration: none;
+                list-style: none;
+                font-size: 16px;
+                font-family: $font;
+
+            }
+        }
+    }
+}
+
+
+.content-title{
+    margin-top:130px;
+    font-family: $font;
+    &__item{
+        h2{
+            font-size: 5.6em;
+            font-family: $fontserif;
+            font-weight:bold;
+            opacity: 0.8;
+
+        }
+        h6{
+            font-size:25px;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+    }
+}

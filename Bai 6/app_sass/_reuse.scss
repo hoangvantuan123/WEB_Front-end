@@ -1,0 +1,56 @@
+.content{
+    max-width: 1200px;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+}
+
+.content-title__stores {
+    display: flex;
+    gap: 0 20px;
+
+    .content-title__store {
+        width: 145px;
+        height: 50px;
+        background: #000000;
+        display: flex;
+        color: #fff;
+        gap: 0 10px;
+        padding: 5px;
+        font-family: $font;
+        border-radius: 6px;
+        align-items: center;
+
+        svg {
+            width: 26px;
+            height: 43px;
+            margin-left: 5px;
+        }
+
+        &__item {
+
+            p {
+                font-size: 9px;
+
+
+            }
+
+            h4 {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.btn{
+    margin-top:50px;
+    margin-bottom: 90px;
+    button{
+
+        width:150px;
+        height: 60px;
+        background-color: $color;
+        color: #ffff;
+        border-radius:10px;
+    }
+}
