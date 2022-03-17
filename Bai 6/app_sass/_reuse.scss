@@ -24,6 +24,7 @@
 .content-title__stores {
     display: flex;
     gap: 0 20px;
+    cursor: pointer;
 
     .content-title__store {
         width: 145px;
@@ -56,6 +57,9 @@
                 font-weight: 500;
             }
         }
+    }
+    .content-title__store__weight{
+        width: 165px;
     }
 }
 .btn{
