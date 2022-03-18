@@ -80,7 +80,7 @@
 
             &-item__text {
                 position: relative;
-                width: 260px;
+                max-width: 260px;
                 height: 345px;
                 border-radius: 20px;
 
@@ -281,4 +281,30 @@
 
     }
 
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .card{
+        .content{
+
+            .card-list{
+                gap: 0 30px;
+                .card-list-item{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+   .hero-blog{
+      .content{
+          max-width:100%;
+        .parent{
+            padding: 40px;
+        }
+
+      }
+   }
 }

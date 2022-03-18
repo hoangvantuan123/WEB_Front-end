@@ -1,9 +1,10 @@
 .wrapper {
+    position: relative;
     width: 100%;
-    min-height: 800px;
+    height: 830px;
     background-image: url(../app_images/c837a6_aa803204cef842e0b9ad7d820e64f77c_mv2.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-size: cover;
     .content{
          max-width: 1200px;
@@ -30,14 +31,34 @@ nav{
         .menu{
             display: flex;
             padding: 0;
+
             li{
                 width: 100px;
                 height: 60px;
                 align-items:center;
                 text-align: center;
                 line-height:50px;
+                transition:all 0.5s ease;
+
+                cursor: pointer;
+                &:hover{
+                    background-color:$color;
+                    a{
+
+                        color: #ffff;
+                    }
+                }
 
 
+
+            }
+            .f-border{
+                border-radius: 0 0 13px 0;
+                &:hover{
+
+                    background-color:$color;
+
+                }
             }
             .col__title{
                 background-color:$color;
@@ -75,4 +96,23 @@ nav{
             margin-bottom:40px;
         }
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav{
+        max-width:900px;
+        margin: 0 auto;
+    }
+    .wrapper{
+        position: relative;
+        width: 100%;
+        height:650px;
+        .content-title{
+            padding-top: 100px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+
+
 }

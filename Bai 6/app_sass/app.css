@@ -49,11 +49,12 @@ h6 {
 }
 
 .wrapper {
+  position: relative;
   width: 100%;
-  min-height: 800px;
+  height: 830px;
   background-image: url(../app_images/c837a6_aa803204cef842e0b9ad7d820e64f77c_mv2.jpg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 .wrapper .content {
@@ -86,6 +87,20 @@ nav .background .menu li {
   align-items: center;
   text-align: center;
   line-height: 50px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+nav .background .menu li:hover {
+  background-color: #DA392B;
+}
+nav .background .menu li:hover a {
+  color: #ffff;
+}
+nav .background .menu .f-border {
+  border-radius: 0 0 13px 0;
+}
+nav .background .menu .f-border:hover {
+  background-color: #DA392B;
 }
 nav .background .menu .col__title {
   background-color: #DA392B;
@@ -117,6 +132,23 @@ nav .background .menu li, nav .background .menu a {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 1024px) {
+  nav {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 650px;
+  }
+  .wrapper .content-title {
+    padding-top: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
 .content {
   max-width: 1200px;
   justify-content: center;
@@ -178,13 +210,27 @@ nav .background .menu li, nav .background .menu a {
   margin-bottom: 90px;
 }
 .btn button {
+  cursor: pointer;
   width: 150px;
   height: 60px;
   background-color: #DA392B;
   color: #ffff;
   border-radius: 10px;
+  transition: all 0.8s ease;
+}
+.btn button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #000000;
+  color: #000000;
 }
 
+@media only screen and (max-width: 1024px) {
+  .content {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
 .card {
   width: 100%;
   height: auto;
@@ -252,7 +298,7 @@ nav .background .menu li, nav .background .menu a {
 }
 .card .content .card-list-item__text {
   position: relative;
-  width: 260px;
+  max-width: 260px;
   height: 345px;
   border-radius: 20px;
   background: linear-gradient(360deg, #C06815 29.95%, #DE9C32 64.26%, #F1BC44 87.65%, #F8D54F 98.2%);
@@ -411,9 +457,25 @@ nav .background .menu li, nav .background .menu a {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .card .content .card-list {
+    gap: 0 30px;
+  }
+  .card .content .card-list .card-list-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-blog .content {
+    max-width: 100%;
+  }
+  .hero-blog .content .parent {
+    padding: 40px;
+  }
+}
 .info .join {
   width: 100%;
-  height: 750px;
+  min-height: 750px;
   background-image: url(../app_images/c837a6_cbd9440d3fce436c913d12b16be55401_mv2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -439,6 +501,11 @@ nav .background .menu li, nav .background .menu a {
   font-family: "Rubik", sans-serif;
   background-color: #FCFF72;
   color: #000000;
+  transition: all 0.7s ease;
+}
+.info .join .btn button:hover {
+  background-color: #f3f3f3;
+  border: 0px solid #000000;
 }
 .info .join .row-right {
   align-items: right;
@@ -453,7 +520,7 @@ nav .background .menu li, nav .background .menu a {
 
 .login-box {
   width: 100%;
-  height: 660px;
+  min-height: 660px;
   background-image: url(../app_images/c837a6_0d97f82987d44ed49ee37d4150d890a5_mv2.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -571,8 +638,24 @@ nav .background .menu li, nav .background .menu a {
   background-color: #FCFF72;
   border-radius: 15px;
   margin-top: 30px;
+  transition: all 0.7s ease;
+}
+.box2 .list-box2__email .list-box2__item button:hover {
+  background-color: #f3f3f3;
+  border: 0px solid #000000;
 }
 
+@media screen and (max-width: 1024px) {
+  .row-right img {
+    max-width: 428px;
+    height: auto;
+  }
+
+  .login-box .container {
+    max-width: 900px;
+    position: relative;
+  }
+}
 .footer {
   width: 100%;
   height: auto !important;
@@ -647,6 +730,12 @@ nav .background .menu li, nav .background .menu a {
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .content {
+    max-width: 900px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
