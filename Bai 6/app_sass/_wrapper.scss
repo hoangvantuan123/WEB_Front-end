@@ -39,7 +39,6 @@ nav{
                 text-align: center;
                 line-height:50px;
                 transition:all 0.5s ease;
-
                 cursor: pointer;
                 &:hover{
                     background-color:$color;
@@ -74,6 +73,17 @@ nav{
                 font-family: $font;
 
             }
+        }
+        .menu li label {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            display: none;
         }
     }
 }
@@ -115,4 +125,128 @@ nav{
     }
 
 
+}
+
+@media only screen and (max-width: 992px) {
+    nav{
+        max-width:700px;
+        justify-content: space-between;
+        align-items: center;
+        .background{
+            background: none;
+            width: auto;
+
+
+            .menu-icon {
+                display: block;
+                color: rgb(22, 22, 22);
+                font-size: 40px;
+                width: 80px;
+                height: 60px;
+                background-color:#fff;
+                border-radius: 0 0 13px 13px;
+                i{
+                    padding: 10px;
+                }
+            }
+
+            #show-menu:checked~.menu-icon i::before {
+                content: '\f00d';
+
+            }
+             .menu {
+                    position: absolute;
+                    display: block;
+                    background: #fffffff7;
+                    height: auto;
+                    width: 100%;
+                    top: 200px;
+                    left: -100%;
+                    margin-left: 0;
+                    overflow-y: auto;
+                    transition: all 1s ease;
+                    z-index: 3;
+                    .col__title{
+
+                        background:none ;
+                        a{
+                            color: #000;
+                        }
+
+                    }
+
+                }
+
+                #show-menu:checked~.menu {
+                    left: 0;
+                    /*Nằm sát bên trái*/
+                }
+
+                .menu li {
+                    margin: 15px 20px;
+                    color: #000;
+                    &:hover{
+                        background: none;
+                        color: #000;
+                    }
+                }
+
+                .menu li .menu-link {
+                    display: none;
+                }
+
+                .menu li a,
+                .menu li label {
+                    width: 100%;
+                    line-height: 30px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 10px;
+                    cursor: pointer;
+                    color: #000;
+                    text-align: left;
+
+
+                }
+                .menu-item  label a {
+                    &:hover{
+                        color: rgb(216, 34, 34);
+                    }
+
+
+                }
+
+
+
+                .menu #show-item1:checked~ul,
+                .menu #show-item2:checked~ul,
+                .menu #show-item3:checked~ul,
+                .menu #show-item4:checked~ul,
+                .menu #show-item5:checked~ul {
+                    max-height: 100vh;
+                }
+
+                .menu-child li a {
+                    padding: 20px;
+                    color: black;
+
+                }
+            }
+    }
+}
+
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .wrapper{
+        .content-title{
+            &__item{
+                h2{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
 }

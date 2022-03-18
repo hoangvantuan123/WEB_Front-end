@@ -6,22 +6,28 @@
     background-color: #F6F4F0;
 
     .content {
+        height: auto;
 
         .card-list {
             display: flex;
             gap: 0 54px;
             position: relative;
+            height: 100%;
+
             .card-box__image {
                 width: 260px;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 transition: transform .6s;
+                height: 350px;
+
                 .filter {
                     background: linear-gradient(358.99deg, rgba(237, 35, 35, 0.7) -3.62%, rgba(245, 10, 10, 0) 117.08%);
                     ;
                     height: 350px;
                 }
+
                 &:hover {
                     transform: scale(1.1);
 
@@ -30,6 +36,7 @@
                     }
                 }
             }
+
             .card-box__image1 {
                 background-image: url(../app_images/c837a6_d5b3b2009d894fa2932bc20684b2a93d_mv2.jpg);
             }
@@ -80,8 +87,8 @@
 
             &-item__text {
                 position: relative;
-                max-width: 260px;
-                height: 345px;
+                width: 260px;
+                max-height: 345px;
                 border-radius: 20px;
 
                 background: linear-gradient(360deg, #C06815 29.95%, #DE9C32 64.26%, #F1BC44 87.65%, #F8D54F 98.2%);
@@ -202,16 +209,25 @@
     }
 }
 
+.bg-parent {
+    background-image: url(../app_images/c837a6_1cf50738638a41d680ed4dc3db5e5492_mv2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-parent-none{
+    display: none;
+}
+
+
+
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-image: url(../app_images/c837a6_1cf50738638a41d680ed4dc3db5e5492_mv2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     margin-top: 100px;
 }
 
@@ -221,7 +237,7 @@
 
 .div2 {
     grid-area: 1 / 2 / 4 / 3;
-
+    display: none;
 }
 
 .div3 {
@@ -285,26 +301,189 @@
 
 
 
-@media screen and (max-width: 1024px) {
-    .card{
-        .content{
 
-            .card-list{
+
+
+@media screen and (max-width: 1024px) {
+    .card {
+        .content {
+
+            .card-list {
                 gap: 0 30px;
-                .card-list-item{
+
+                .card-list-item {
                     width: 100%;
                     height: auto;
                 }
             }
         }
     }
-   .hero-blog{
-      .content{
-          max-width:100%;
-        .parent{
-            padding: 40px;
-        }
 
-      }
-   }
+    .hero-blog {
+        .content {
+            max-width: 100%;
+
+            .parent {
+                padding: 40px;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .card {
+        .content {
+            max-width:100%;
+            .card-list {
+
+                height: auto;
+                gap:  0 20px;
+
+
+                .card-box__image {
+                    width: auto;
+                    height: 290px;
+
+
+                    .filter {
+                        position: relative;
+                        height: 290px;
+
+                        .card-image__text {
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    .hero-blog {
+        .content {
+            max-width: 100%;
+            padding: 0;
+
+            .parent {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                padding: 20px;
+
+                .box-item {
+                    width: 100%;
+                    padding: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+
+
+            .card-list {
+                position: absolute;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               width: 100%;
+
+
+                .card-list-item {
+                    max-width: 100%;
+                    min-height: 380px;
+                    margin-bottom: 200px;
+
+                    .card-box__image {
+                        height: 380px;
+
+                        .filter {
+                            height: 380px;
+
+                            .card-image__text {
+                                left: 30%;
+                            }
+                        }
+                    }
+
+                    .card-list-text {
+                        h5 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+            }
+
+        .article {
+            margin-top: 0;
+
+            &-title {
+                h3 {
+                    font-size: 2.2em;
+                }
+            }
+
+            &-image {
+                &__A {
+                    img {
+
+                        width: 100%;
+                        height: 330px;
+                    }
+                }
+
+                &__B {
+                    width: 100%;
+                    margin-top: -100px;
+
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-blog {
+        .article-title__item {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+
+    .bg-parent {
+        background-image: none;
+
+    }
+
+    .bg-parent-none {
+        display: block;
+        width: 100%;
+        height: 600px;
+        background-image: url(../app_images/c837a6_1cf50738638a41d680ed4dc3db5e5492_mv2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .parent {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 40;
+       .box-item{
+           margin-bottom:50px;
+       }
+    }
+
+
+
 }

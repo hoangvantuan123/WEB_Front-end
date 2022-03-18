@@ -64,7 +64,8 @@
                         gap: 20px 0;
                         cursor: pointer;
                     }
-                    .content-title__store__weight{
+
+                    .content-title__store__weight {
                         width: 165px;
                     }
                 }
@@ -103,9 +104,25 @@
 
 
 @media screen and (max-width: 1024px) {
-    .footer{
-        .content{
-            max-width:900px;
+    .footer {
+        .content {
+            max-width: 900px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+        .content {
+
+            .footer-body {
+                .footer-body-list {
+                    flex-direction: column;
+                    display: inline-block;
+                }
+            }
         }
     }
 }
