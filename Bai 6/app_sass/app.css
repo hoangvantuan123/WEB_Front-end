@@ -183,16 +183,18 @@ nav .background input[type=checkbox] {
   }
   nav .background #show-menu:checked ~ .menu-icon i::before {
     content: "\f00d";
+    z-index: 10000;
+    position: absolute;
   }
   nav .background .menu {
     position: absolute;
     display: block;
-    background: #fffffff7;
-    height: auto;
+    background: #ffffff;
+    height: 100vh;
     width: 100%;
-    top: 200px;
-    left: -100%;
-    margin-left: 0;
+    padding-top: 100px;
+    top: -100vh;
+    left: 0;
     overflow-y: auto;
     transition: all 1s ease;
     z-index: 3;
@@ -204,7 +206,7 @@ nav .background input[type=checkbox] {
     color: #000;
   }
   nav .background #show-menu:checked ~ .menu {
-    left: 0;
+    top: 0;
     /*Nằm sát bên trái*/
   }
   nav .background .menu li {
@@ -220,13 +222,12 @@ nav .background input[type=checkbox] {
   }
   nav .background .menu li a,
 nav .background .menu li label {
-    width: 100%;
+    max-width: 100%;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 500;
     display: block;
     margin: 0 auto;
-    padding: 10px;
     cursor: pointer;
     color: #000;
     text-align: left;
