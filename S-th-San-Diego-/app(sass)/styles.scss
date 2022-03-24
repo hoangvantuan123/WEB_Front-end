@@ -1,0 +1,14 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+//font
+$font :'EB Garamond', serif;
+
+@import   './header';
+@import  './boxes2';
+@import './boxes3';
+@import './slide';
+@import './hero';
+@import './counters';

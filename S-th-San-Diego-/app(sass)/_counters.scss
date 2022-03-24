@@ -1,0 +1,107 @@
+.counters_video {
+    width: 100%;
+    position: relative;
+    top: 300px;
+
+    .container {
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        hr{
+            width: 100%;
+            color: #000;
+            margin-top: 20px ;
+        }
+        .row{
+            hr{
+                display: none;
+            }
+        }
+    }
+}
+
+.row {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: end;
+
+    .four {
+        position: relative;
+        width: 300px;
+        .counter{
+            font-size:40px;
+            font-family: 'Alef', sans-serif;
+            font-weight: 500px;
+            display: block;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: 'Alef', sans-serif;
+            margin-top: 20px;
+            width: 250px;
+
+        }
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .row{
+        width: 100%;
+        padding-top: 30px ;
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .counters_video {
+        top: -300px;
+
+        .container {
+            padding: 0px;
+              hr{
+                width: 90%;
+                position: relative;
+
+              align-items: center;
+              margin: 0 auto;
+              top: 30px ;
+              }
+            .row{
+                hr{
+                    position: relative;
+                    display:block;
+                   width: 90%;
+                }
+            }
+
+        }
+
+
+    }
+    .row{
+        width: 100%;
+        justify-content:center;
+        text-align: center;
+
+        .four{
+            position: relative;
+            max-width: 100%;
+            padding: 10px;
+            margin: 30px 0 0 0 ;
+            .counter{
+                font-size: 50px;
+            }
+            p{
+                max-width: 100%;
+                margin: 0 auto;
+                font-size: 17px ;
+            }
+        }
+    }
+}

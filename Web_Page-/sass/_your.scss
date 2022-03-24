@@ -1,0 +1,36 @@
+.your-career{
+    position: relative;
+    max-width: 100%;
+    margin: 0 100px 0 100px ;
+    justify-content: center;
+    padding-top: 100px ;
+    h2{
+        text-align: center;
+        margin-top: 20px ;
+    }
+    .text-flex{
+        display: flex;
+        justify-content:space-around;
+        .text-column{
+            width: 50%;
+            height: 450px ;
+            .next{
+                margin: 0;
+            }
+        }
+        .text-column1{
+            h6{
+                position: relative;
+                width: 250px ;
+                height: 250px ;
+                font-size: 20px ;
+                transform: rotate(90deg);
+                opacity: 0.6;
+                padding-left: 10px ;
+            }
+
+        }
+
+    }
+
+}

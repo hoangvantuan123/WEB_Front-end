@@ -1,0 +1,41 @@
+.title {
+    position: relative;
+    margin: 0 100px 0 100px ;
+    h4{
+        padding-top: 20px ;
+        margin: 10px 0 ;
+        max-width: 600px ;
+        height: 250px ;
+        line-height: 30px ;
+        opacity: 0.8;
+    }
+}
+.field {
+    max-width: 100%;
+    margin-top: 90px ;
+
+    .bar{
+        margin: 0 100px 0 100px ;
+        display: flex;
+        justify-content:space-between;
+        line-height: 60px ;
+        &:hover{
+            background: rgba(89, 129, 131, 0.876);
+            margin: 0 30px ;
+            padding: 5px ;
+            border-radius: 20px ;
+            transition: all 0.3s;
+        }
+        p{
+            font-size: 19px ;
+            opacity: 0.5;
+            font-weight: 600;
+        }
+
+    }
+    .next {
+        margin: 0 100px 0 100px ;
+    }
+
+
+}

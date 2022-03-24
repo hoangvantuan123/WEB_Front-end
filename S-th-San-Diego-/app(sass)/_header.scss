@@ -1,0 +1,221 @@
+.header-title {
+    width: 100%;
+    background-color: #6c6662;
+    height: 1010px;
+}
+
+h1 {
+    font-family: $font;
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 300;
+    padding: 5px;
+    color: white;
+
+}
+
+.container {
+    width:100%;
+    hr {
+        color: white;
+        width: 100%;
+        height: 2px;
+    }
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    margin-top: 30px;
+    nav {
+        display: flex;
+        width: 100%;
+        height: 90px ;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .donate {
+            text-decoration: none;
+            color: white;
+            margin-top: -20px;
+            font-size: 14px;
+
+        }
+
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    z-index: 1;
+}
+
+.menu-item:not(:first-child) {
+    margin-left: 15px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 20px ;
+}
+
+.menu-item.has-child {
+    position: relative;
+}
+
+.menu-item.has-child:hover .menu-child {
+    opacity: 1;
+    visibility: visible;
+}
+.menu li label {
+    display: none;
+}
+
+.menu li a:hover,
+.menu li label:hover {
+    color: coral;
+
+    transition: all .3s;
+}
+
+.wrapper .menu-icon {
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+.wrapper .menu-icon {
+    display: none;
+}
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
+
+
+
+/* */
+@media (max-width: 920px) {
+    .wrapper .menu-icon {
+        display: block;
+    }
+
+    .wrapper nav {
+        padding: 0 20px;
+    }
+    /* làm dấu X biến mất thanh menu đi */
+    .wrapper #show-menu:checked~.menu-icon i::before {
+        content:'\f00d';
+
+
+    }
+    nav .menu {
+        position: absolute;
+        display: block;
+        background: #f1f1f1f7;
+        height: auto;
+        width: 70%;
+        top: 90px;
+        left: -106%;
+        margin-left: -42px;
+        max-width: 100%;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+        z-index: 3;
+        border-radius: 10px ;
+
+    }
+
+    nav #show-menu:checked~.menu {
+        left: 0%;
+    }
+
+    .menu li {
+        margin: 15px 20px;
+    }
+
+    .menu li a,
+    .menu li label {
+        width: 100%;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: 800;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    .menu li .menu-link {
+        display: none;
+    }
+
+    .menu ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    .menu #show-item1:checked~ul,
+    .menu #show-item2:checked~ul,
+    .menu #show-item3:checked~ul,
+    .menu #show-item4:checked~ul,
+    .menu #show-item5:checked~ul,
+    .menu #show-item6:checked~ul,
+    .menu #show-item7:checked~ul {
+        max-height: 100vh;
+    }
+
+
+}
+
+.image-title {
+    img {
+        position: relative;
+        top: 50px;
+        width: 80%;
+        float: right;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-title {
+        width: 100%;
+        height: 500px;
+    }
+    h1 {
+
+        font-size: 5rem;
+    }
+
+}
+@media (max-width:600px) {
+    .header-title {
+        height: 440px;
+    }
+    h1 {
+        font-size:2em;
+    }
+    .image-title{
+        img{
+            width:100%;
+
+        }
+    }
+}

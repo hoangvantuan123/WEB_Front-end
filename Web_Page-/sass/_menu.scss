@@ -1,0 +1,207 @@
+.wrapper{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 999;
+}
+.wrapper nav {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 90px ;
+    padding: 0 50px 0 100px ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .content{
+    display: flex;
+}
+nav .content .links{
+    margin-left: 80px ;
+    display: flex;
+}
+.logo a {
+    font-size: 40px ;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+.content .links li {
+    list-style: none;
+    line-height: 40px ;
+}
+.content .links li a,
+.content .links li label {
+    font-size: 15px ;
+    font-weight: 550;
+    color: black;
+    padding:  10px 30px ;
+    transition: ease 0.4s;
+    text-decoration: none;
+}
+.content .links li label {
+    display: none ;
+
+}
+.content .links li a:hover,
+.content .links li label:hover{
+    color: coral;
+    padding:  20px;
+    transition: all 0.3s;
+}
+.wrapper .menu-icon {
+    color: rgb(133, 61, 61);
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+.wrapper .menu-icon {
+    display: none;
+}
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
+
+/* Dropdown Menu code start */
+
+.content .links ul {
+    position: absolute;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content .links li:hover>ul {
+    top: 70px;
+    opacity: 0.7;
+    visibility: visible;
+    transition: all 0.5s ;
+}
+
+.content .links ul li a {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px;
+}
+
+.content .links ul ul {
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+.content .links ul li {
+    position: relative;
+}
+
+.content .links ul li:hover ul {
+    top: 0;
+}
+
+
+/* Responsive code start */
+
+@media screen and (max-width: 1250px) {
+    .wrapper nav {
+        min-width: 100%;
+        padding: 0 20px;
+    }
+    nav .content .links {
+        margin-left: 30px;
+    }
+    .content .links li a {
+        padding: 8px 13px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .wrapper .menu-icon {
+        display: block;
+    }
+    nav .logo {
+        position: relative;
+        max-width: 350px;
+    }
+    /* tạo dấu (x) làm biến mất thanh menu*/
+    .wrapper #show-menu:checked~.menu-icon i::before {
+        content: "\f00d";
+    }
+    nav .content .links {
+        position: absolute;
+        display: block;
+        background: #f8f5f5f7;
+        height: 200vh;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        margin-left: 0;
+        max-width: 100%;
+        overflow-y: auto;
+        padding-bottom: 100px;
+        transition: all 0.3s ease;
+        z-index: 3;
+    }
+    nav #show-menu:checked~.content .links {
+        left: 0%;
+    }
+    .content .links li {
+        margin: 15px 20px;
+    }
+    .content .links li a,
+    .content .links li label {
+        width: 100%;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 800;
+        display: block;
+        padding: 8px 18px;
+        cursor: pointer;
+    }
+    .content .links li a.desktop-link {
+        display: none;
+    }
+    /* dropdown responsive code start */
+    .content .links ul,
+    .content .links ul ul {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        max-height: 0px;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .content .links #show-item1:checked~ul,
+    .content .links #show-item2:checked~ul,
+    .content .links #show-item3:checked~ul,
+    .content .links #show-item4:checked~ul,
+    .content .links #show-item5:checked~ul,
+    .content .links #show-item6:checked~ul {
+        max-height: 100vh;
+    }
+    .content .links ul li {
+        margin: 7px 20px;
+    }
+    .content .links ul li a {
+        font-size: 16px;
+        line-height: 30px;
+        border-radius: 5px!important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wrapper nav {
+        padding: 0 10px;
+    }
+    .content .logo a {
+        font-size: 27px;
+    }
+}
