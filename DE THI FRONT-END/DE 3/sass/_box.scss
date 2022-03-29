@@ -1,0 +1,86 @@
+.box {
+    width: 100%;
+    min-height: 400px;
+    .content {
+        width: 920px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+    }
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .div4 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+    .box-item {
+        padding-top: 30px;
+        font-family: $font1;
+        &__title {
+            h4 {
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+        }
+        &__image {
+            width: 225px;
+            height: 100px;
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: 1px 22px 13px -10px rgba(0, 0, 0, 0.56);
+            .box1-filter {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #000000e0;
+                cursor: pointer;
+                h5 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    font-size: 16px;
+                    color: #ffff;
+                    font-family: $font1;
+                    font-weight: 200;
+                }
+            }
+        }
+        &__text {
+            p {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+        }
+        &__btn {
+            text-align: right;
+            button {
+                width: 140px;
+                height: 30px;
+                font-size: 12px;
+                border-radius: 9px;
+                color: rgb(73, 160, 182);
+                border: 1px solid rgb(155, 155, 155);
+            }
+        }
+    }
+}

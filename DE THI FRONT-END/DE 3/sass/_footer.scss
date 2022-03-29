@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    min-height: 600px;
+    background-color: $color;
+    color: #FFFF;
+    .content {
+        width: 920px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.footer-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.list-item1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.list-item2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.list-item3 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.list-item4 {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.list-item5 {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.list-item6 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.list-item7 {
+    grid-area: 2 / 5 / 3 / 6;
+}

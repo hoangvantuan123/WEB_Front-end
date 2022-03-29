@@ -1,0 +1,92 @@
+.hero {
+    width: 100%;
+    height: 400px;
+    background-color: $color2;
+    .content {
+        width: 920px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-family: $font1;
+    }
+    .slide {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 30px;
+        padding-top: 40px;
+        align-items: center;
+    }
+    .slide-left {
+        width: 50%;
+        &__title {
+            h2 {
+                font-size: 3em;
+                font-weight: 400;
+                font-style: italic;
+                opacity: 0.7;
+                line-height: 50px;
+            }
+            p {
+                font-size: 15px;
+                margin-top: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .slide-right {
+        width: 50%;
+        &__box {
+            align-items: center;
+            display: flex;
+            .slide-right__item {
+                width: 200px;
+                height: 230px;
+                background-color: $color1;
+            }
+            .slide-right__item-center {
+                min-width: 315px;
+                height: 275px;
+                background-color: $color;
+                position: relative;
+                .box1-filter {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #000000e0;
+                    cursor: pointer;
+                    h5 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        font-size: 24px;
+                        color: #ffff;
+                        font-family: $font1;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+        .slide-right__dots {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            gap: 0 10px;
+            .slide-dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgb(128, 128, 128);
+            }
+            .slide-dot__a {
+                background-color: #2b2b2b;
+            }
+        }
+    }
+}
